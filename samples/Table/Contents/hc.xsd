@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.hancom.co.kr/hwpml/2011/core" xmlns:hc="http://www.hancom.co.kr/hwpml/2011/core" xmlns:hh="http://www.hancom.co.kr/hwpml/2011/head" xmlns:hp="http://www.hancom.co.kr/hwpml/2011/paragraph">
+  <xs:import namespace="http://www.hancom.co.kr/hwpml/2011/head" schemaLocation="header.xsd"/>
+  <xs:import namespace="http://www.hancom.co.kr/hwpml/2011/paragraph" schemaLocation="hp.xsd"/>
+  <xs:element name="fillBrush">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="hc:winBrush"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="winBrush">
+    <xs:complexType>
+      <xs:attribute name="alpha" use="required" type="xs:integer"/>
+      <xs:attribute name="faceColor" use="required" type="xs:NCName"/>
+      <xs:attribute name="hatchColor" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="intent">
+    <xs:complexType>
+      <xs:attribute name="unit" use="required" type="xs:NCName"/>
+      <xs:attribute name="value" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="left">
+    <xs:complexType>
+      <xs:attribute name="unit" use="required" type="xs:NCName"/>
+      <xs:attribute name="value" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="right">
+    <xs:complexType>
+      <xs:attribute name="unit" use="required" type="xs:NCName"/>
+      <xs:attribute name="value" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="prev">
+    <xs:complexType>
+      <xs:attribute name="unit" use="required" type="xs:NCName"/>
+      <xs:attribute name="value" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="next">
+    <xs:complexType>
+      <xs:attribute name="unit" use="required" type="xs:NCName"/>
+      <xs:attribute name="value" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

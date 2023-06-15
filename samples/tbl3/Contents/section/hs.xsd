@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.hancom.co.kr/hwpml/2011/section" xmlns:hs="http://www.hancom.co.kr/hwpml/2011/section" xmlns:hp="http://www.hancom.co.kr/hwpml/2011/paragraph">
+  <xs:import namespace="http://www.hancom.co.kr/hwpml/2011/paragraph" schemaLocation="section.xsd"/>
+  <xs:element name="sec">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="hp:p"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.hancom.co.kr/hwpml/2011/paragraph" xmlns:hs="http://www.hancom.co.kr/hwpml/2011/section" xmlns:hp="http://www.hancom.co.kr/hwpml/2011/paragraph">
+  <xs:import namespace="http://www.hancom.co.kr/hwpml/2011/section" schemaLocation="hs.xsd"/>
+  <xs:element name="p">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="hp:run"/>
+        <xs:element ref="hp:linesegarray"/>
+      </xs:sequence>
+      <xs:attribute name="columnBreak" use="required" type="xs:integer"/>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+      <xs:attribute name="merged" use="required" type="xs:integer"/>
+      <xs:attribute name="pageBreak" use="required" type="xs:integer"/>
+      <xs:attribute name="paraPrIDRef" use="required" type="xs:integer"/>
+      <xs:attribute name="styleIDRef" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="run">
+    <xs:complexType>
+      <xs:choice>
+        <xs:sequence>
+          <xs:element ref="hp:secPr"/>
+          <xs:element ref="hp:ctrl"/>
+        </xs:sequence>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="hp:t"/>
+          <xs:element ref="hp:tbl"/>
+        </xs:choice>
+      </xs:choice>
+      <xs:attribute name="charPrIDRef" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="secPr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="hp:grid"/>
+        <xs:element ref="hp:startNum"/>
+        <xs:element ref="hp:visibility"/>
+        <xs:element ref="hp:lineNumberShape"/>
+        <xs:element ref="hp:pagePr"/>
+        <xs:element ref="hp:footNotePr"/>
+        <xs:element ref="hp:endNotePr"/>
+        <xs:element maxOccurs="unbounded" ref="hp:pageBorderFill"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required"/>
+      <xs:attribute name="masterPageCnt" use="required" type="xs:integer"/>
+      <xs:attribute name="memoShapeIDRef" use="required" type="xs:integer"/>
+      <xs:attribute name="outlineShapeIDRef" use="required" type="xs:integer"/>
+      <xs:attribute name="spaceColumns" use="required" type="xs:integer"/>
+      <xs:attribute name="tabStop" use="required" type="xs:integer"/>
+      <xs:attribute name="textDirection" use="required" type="xs:NCName"/>
+      <xs:attribute name="textVerticalWidthHead" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="grid">
+    <xs:complexType>
+      <xs:attribute name="charGrid" use="required" type="xs:integer"/>
+      <xs:attribute name="lineGrid" use="required" type="xs:integer"/>
+      <xs:attribute name="wonggojiFormat" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="startNum">
+    <xs:complexType>
+      <xs:attribute name="equation" use="required" type="xs:integer"/>
+      <xs:attribute name="page" use="required" type="xs:integer"/>
+      <xs:attribute name="pageStartsOn" use="required" type="xs:NCName"/>
+      <xs:attribute name="pic" use="required" type="xs:integer"/>
+      <xs:attribute name="tbl" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="visibility">
+    <xs:complexType>
+      <xs:attribute name="border" use="required" type="xs:NCName"/>
+      <xs:attribute name="fill" use="required" type="xs:NCName"/>
+      <xs:attribute name="hideFirstEmptyLine" use="required" type="xs:integer"/>
+      <xs:attribute name="hideFirstFooter" use="required" type="xs:integer"/>
+      <xs:attribute name="hideFirstHeader" use="required" type="xs:integer"/>
+      <xs:attribute name="hideFirstMasterPage" use="required" type="xs:integer"/>
+      <xs:attribute name="hideFirstPageNum" use="required" type="xs:integer"/>
+      <xs:attribute name="showLineNumber" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="lineNumberShape">
+    <xs:complexType>
+      <xs:attribute name="countBy" use="required" type="xs:integer"/>
+      <xs:attribute name="distance" use="required" type="xs:integer"/>
+      <xs:attribute name="restartType" use="required" type="xs:integer"/>
+      <xs:attribute name="startNumber" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pagePr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="hp:margin"/>
+      </xs:sequence>
+      <xs:attribute name="gutterType" use="required" type="xs:NCName"/>
+      <xs:attribute name="height" use="required" type="xs:integer"/>
+      <xs:attribute name="landscape" use="required" type="xs:NCName"/>
+      <xs:attribute name="width" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="margin">
+    <xs:complexType>
+      <xs:attribute name="bottom" use="required" type="xs:integer"/>
+      <xs:attribute name="footer" use="required" type="xs:integer"/>
+      <xs:attribute name="gutter" use="required" type="xs:integer"/>
+      <xs:attribute name="header" use="required" type="xs:integer"/>
+      <xs:attribute name="left" use="required" type="xs:integer"/>
+      <xs:attribute name="right" use="required" type="xs:integer"/>
+      <xs:attribute name="top" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="footNotePr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="hp:autoNumFormat"/>
+        <xs:element ref="hp:noteLine"/>
+        <xs:element ref="hp:noteSpacing"/>
+        <xs:element ref="hp:numbering"/>
+        <xs:element ref="hp:placement"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="endNotePr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="hp:autoNumFormat"/>
+        <xs:element ref="hp:noteLine"/>
+        <xs:element ref="hp:noteSpacing"/>
+        <xs:element ref="hp:numbering"/>
+        <xs:element ref="hp:placement"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pageBorderFill">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="hp:offset"/>
+      </xs:sequence>
+      <xs:attribute name="borderFillIDRef" use="required" type="xs:integer"/>
+      <xs:attribute name="fillArea" use="required" type="xs:NCName"/>
+      <xs:attribute name="footerInside" use="required" type="xs:integer"/>
+      <xs:attribute name="headerInside" use="required" type="xs:integer"/>
+      <xs:attribute name="textBorder" use="required" type="xs:NCName"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="offset">
+    <xs:complexType>
+      <xs:attribute name="bottom" use="required" type="xs:integer"/>
+      <xs:attribute name="left" use="required" type="xs:integer"/>
+      <xs:attribute name="right" use="required" type="xs:integer"/>
+      <xs:attribute name="top" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ctrl">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="hp:colPr"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="colPr">
+    <xs:complexType>
+      <xs:attribute name="colCount" use="required" type="xs:integer"/>
+      <xs:attribute name="id" use="required"/>
+      <xs:attribute name="layout" use="required" type="xs:NCName"/>
+      <xs:attribute name="sameGap" use="required" type="xs:integer"/>
+      <xs:attribute name="sameSz" use="required" type="xs:integer"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="t">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="hp:fwSpace"/>
+        <xs:element ref="hp:lineBreak"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fwSpace">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="lineBreak">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="tbl">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="hp:caption"/>
+        <xs:element ref="hp:inMargin"/>
+        <xs:element ref="hp:outMargin"/>
+        <xs:element ref="hp:pos"/>
+        <xs:element ref="hp:sz"/>
+        <xs:element ref="hp:tr"/>
+      </xs:choice>
+      <xs:attribute name="borderFillIDRef" use="required" type="xs:integer"/>
+      <xs:attribute name="cellSpacing" use="required" type="xs:integer"/>
+      <xs:attribute name="colCnt" use="required" type="xs:integer"/>
+      <xs:attribute name="dropcapstyle" use="required" type="xs:NCName"/>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+      <xs:attribute name="lock" use="required" type="xs:integer"/>
+      <xs:attribute name="noAdjust" use="required" type="xs:integer"/>
+      <xs:attribute name="numberingType" use="required" type="xs:NCName"/>
+      <xs:attribute name="pageBreak" use="required" type="xs:NCName"/>
+      <xs:attribute name="repeatHeader" use="required" type="xs:integer"/>
+      <xs:attribute name="rowCnt" use="required" type="xs:integer"/>
+      <xs:attribute name="textFlow" use="required" type="xs:NCName"/>
+      <xs:attribute name="textWrap" use="required" type="xs:NCName"/>
+      <xs:attribute name="zOrder" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="caption">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="hp:subList"/>
+      </xs:sequence>
+      <xs:attribute name="fullSz" use="required" type="xs:integer"/>
+      <xs:attribute name="gap" use="required" type="xs:integer"/>
+      <xs:attribute name="lastWidth" use="required" type="xs:integer"/>
+      <xs:attribute name="side" use="required" type="xs:NCName"/>
+      <xs:attribute name="width" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="inMargin">
+    <xs:complexType>
+      <xs:attribute name="bottom" use="required" type="xs:integer"/>
+      <xs:attribute name="left" use="required" type="xs:integer"/>
+      <xs:attribute name="right" use="required" type="xs:integer"/>
+      <xs:attribute name="top" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="outMargin">
+    <xs:complexType>
+      <xs:attribute name="bottom" use="required" type="xs:integer"/>
+      <xs:attribute name="left" use="required" type="xs:integer"/>
+      <xs:attribute name="right" use="required" type="xs:integer"/>
+      <xs:attribute name="top" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pos">
+    <xs:complexType>
+      <xs:attribute name="affectLSpacing" use="required" type="xs:integer"/>
+      <xs:attribute name="allowOverlap" use="required" type="xs:integer"/>
+      <xs:attribute name="flowWithText" use="required" type="xs:integer"/>
+      <xs:attribute name="holdAnchorAndSO" use="required" type="xs:integer"/>
+      <xs:attribute name="horzAlign" use="required" type="xs:NCName"/>
+      <xs:attribute name="horzOffset" use="required" type="xs:integer"/>
+      <xs:attribute name="horzRelTo" use="required" type="xs:NCName"/>
+      <xs:attribute name="treatAsChar" use="required" type="xs:integer"/>
+      <xs:attribute name="vertAlign" use="required" type="xs:NCName"/>
+      <xs:attribute name="vertOffset" use="required" type="xs:integer"/>
+      <xs:attribute name="vertRelTo" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sz">
+    <xs:complexType>
+      <xs:attribute name="height" use="required" type="xs:integer"/>
+      <xs:attribute name="heightRelTo" use="required" type="xs:NCName"/>
+      <xs:attribute name="protect" use="required" type="xs:integer"/>
+      <xs:attribute name="width" use="required" type="xs:integer"/>
+      <xs:attribute name="widthRelTo" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="hp:tc"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="hp:subList"/>
+        <xs:element ref="hp:cellAddr"/>
+        <xs:element ref="hp:cellSpan"/>
+        <xs:element ref="hp:cellSz"/>
+        <xs:element ref="hp:cellMargin"/>
+      </xs:sequence>
+      <xs:attribute name="borderFillIDRef" use="required" type="xs:integer"/>
+      <xs:attribute name="dirty" use="required" type="xs:integer"/>
+      <xs:attribute name="editable" use="required" type="xs:integer"/>
+      <xs:attribute name="hasMargin" use="required" type="xs:integer"/>
+      <xs:attribute name="header" use="required" type="xs:integer"/>
+      <xs:attribute name="name" use="required"/>
+      <xs:attribute name="protect" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cellAddr">
+    <xs:complexType>
+      <xs:attribute name="colAddr" use="required" type="xs:integer"/>
+      <xs:attribute name="rowAddr" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cellSpan">
+    <xs:complexType>
+      <xs:attribute name="colSpan" use="required" type="xs:integer"/>
+      <xs:attribute name="rowSpan" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cellSz">
+    <xs:complexType>
+      <xs:attribute name="height" use="required" type="xs:integer"/>
+      <xs:attribute name="width" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cellMargin">
+    <xs:complexType>
+      <xs:attribute name="bottom" use="required" type="xs:integer"/>
+      <xs:attribute name="left" use="required" type="xs:integer"/>
+      <xs:attribute name="right" use="required" type="xs:integer"/>
+      <xs:attribute name="top" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="linesegarray">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="hp:lineseg"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="lineseg">
+    <xs:complexType>
+      <xs:attribute name="baseline" use="required" type="xs:integer"/>
+      <xs:attribute name="flags" use="required" type="xs:integer"/>
+      <xs:attribute name="horzpos" use="required" type="xs:integer"/>
+      <xs:attribute name="horzsize" use="required" type="xs:integer"/>
+      <xs:attribute name="spacing" use="required" type="xs:integer"/>
+      <xs:attribute name="textheight" use="required" type="xs:integer"/>
+      <xs:attribute name="textpos" use="required" type="xs:integer"/>
+      <xs:attribute name="vertpos" use="required" type="xs:integer"/>
+      <xs:attribute name="vertsize" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="autoNumFormat">
+    <xs:complexType>
+      <xs:attribute name="prefixChar" use="required"/>
+      <xs:attribute name="suffixChar" use="required"/>
+      <xs:attribute name="supscript" use="required" type="xs:integer"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+      <xs:attribute name="userChar" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="noteLine">
+    <xs:complexType>
+      <xs:attribute name="color" use="required"/>
+      <xs:attribute name="length" use="required" type="xs:integer"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+      <xs:attribute name="width" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="noteSpacing">
+    <xs:complexType>
+      <xs:attribute name="aboveLine" use="required" type="xs:integer"/>
+      <xs:attribute name="belowLine" use="required" type="xs:integer"/>
+      <xs:attribute name="betweenNotes" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="numbering">
+    <xs:complexType>
+      <xs:attribute name="newNum" use="required" type="xs:integer"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="placement">
+    <xs:complexType>
+      <xs:attribute name="beneathText" use="required" type="xs:integer"/>
+      <xs:attribute name="place" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="hp:p"/>
+      </xs:sequence>
+      <xs:attribute name="hasNumRef" use="required" type="xs:integer"/>
+      <xs:attribute name="hasTextRef" use="required" type="xs:integer"/>
+      <xs:attribute name="id" use="required"/>
+      <xs:attribute name="lineWrap" use="required" type="xs:NCName"/>
+      <xs:attribute name="linkListIDRef" use="required" type="xs:integer"/>
+      <xs:attribute name="linkListNextIDRef" use="required" type="xs:integer"/>
+      <xs:attribute name="textDirection" use="required" type="xs:NCName"/>
+      <xs:attribute name="textHeight" use="required" type="xs:integer"/>
+      <xs:attribute name="textWidth" use="required" type="xs:integer"/>
+      <xs:attribute name="vertAlign" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

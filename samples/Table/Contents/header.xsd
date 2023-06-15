@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.hancom.co.kr/hwpml/2011/head" xmlns:hc="http://www.hancom.co.kr/hwpml/2011/core" xmlns:hh="http://www.hancom.co.kr/hwpml/2011/head" xmlns:hp="http://www.hancom.co.kr/hwpml/2011/paragraph">
+  <xs:import namespace="http://www.hancom.co.kr/hwpml/2011/core" schemaLocation="hc.xsd"/>
+  <xs:import namespace="http://www.hancom.co.kr/hwpml/2011/paragraph" schemaLocation="hp.xsd"/>
+  <xs:element name="head">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="hh:beginNum"/>
+        <xs:element ref="hh:refList"/>
+        <xs:element ref="hh:compatibleDocument"/>
+        <xs:element ref="hh:docOption"/>
+        <xs:element ref="hh:trackchageConfig"/>
+      </xs:sequence>
+      <xs:attribute name="secCnt" use="required" type="xs:integer"/>
+      <xs:attribute name="version" use="required" type="xs:decimal"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="beginNum">
+    <xs:complexType>
+      <xs:attribute name="endnote" use="required" type="xs:integer"/>
+      <xs:attribute name="equation" use="required" type="xs:integer"/>
+      <xs:attribute name="footnote" use="required" type="xs:integer"/>
+      <xs:attribute name="page" use="required" type="xs:integer"/>
+      <xs:attribute name="pic" use="required" type="xs:integer"/>
+      <xs:attribute name="tbl" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="refList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="hh:fontfaces"/>
+        <xs:element ref="hh:borderFills"/>
+        <xs:element ref="hh:charProperties"/>
+        <xs:element ref="hh:tabProperties"/>
+        <xs:element ref="hh:numberings"/>
+        <xs:element ref="hh:paraProperties"/>
+        <xs:element ref="hh:styles"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fontfaces">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="hh:fontface"/>
+      </xs:sequence>
+      <xs:attribute name="itemCnt" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fontface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="hh:font"/>
+      </xs:sequence>
+      <xs:attribute name="fontCnt" use="required" type="xs:integer"/>
+      <xs:attribute name="lang" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="font">
+    <xs:complexType>
+      <xs:attribute name="face" use="required"/>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+      <xs:attribute name="isEmbedded" use="required" type="xs:integer"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="borderFills">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="hh:borderFill"/>
+      </xs:sequence>
+      <xs:attribute name="itemCnt" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="borderFill">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="hh:slash"/>
+        <xs:element ref="hh:backSlash"/>
+        <xs:element ref="hh:leftBorder"/>
+        <xs:element ref="hh:rightBorder"/>
+        <xs:element ref="hh:topBorder"/>
+        <xs:element ref="hh:bottomBorder"/>
+        <xs:element ref="hh:diagonal"/>
+        <xs:element minOccurs="0" ref="hc:fillBrush"/>
+      </xs:sequence>
+      <xs:attribute name="breakCellSeparateLine" use="required" type="xs:integer"/>
+      <xs:attribute name="centerLine" use="required" type="xs:NCName"/>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+      <xs:attribute name="shadow" use="required" type="xs:integer"/>
+      <xs:attribute name="threeD" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="slash">
+    <xs:complexType>
+      <xs:attribute name="Crooked" use="required" type="xs:integer"/>
+      <xs:attribute name="isCounter" use="required" type="xs:integer"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="backSlash">
+    <xs:complexType>
+      <xs:attribute name="Crooked" use="required" type="xs:integer"/>
+      <xs:attribute name="isCounter" use="required" type="xs:integer"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="leftBorder">
+    <xs:complexType>
+      <xs:attribute name="color" use="required"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+      <xs:attribute name="width" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rightBorder">
+    <xs:complexType>
+      <xs:attribute name="color" use="required"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+      <xs:attribute name="width" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="topBorder">
+    <xs:complexType>
+      <xs:attribute name="color" use="required"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+      <xs:attribute name="width" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bottomBorder">
+    <xs:complexType>
+      <xs:attribute name="color" use="required"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+      <xs:attribute name="width" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="diagonal">
+    <xs:complexType>
+      <xs:attribute name="color" use="required"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+      <xs:attribute name="width" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="charProperties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="hh:charPr"/>
+      </xs:sequence>
+      <xs:attribute name="itemCnt" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="charPr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="hh:fontRef"/>
+        <xs:element ref="hh:ratio"/>
+        <xs:element ref="hh:spacing"/>
+        <xs:element ref="hh:relSz"/>
+        <xs:element ref="hh:offset"/>
+      </xs:sequence>
+      <xs:attribute name="borderFillIDRef" use="required" type="xs:integer"/>
+      <xs:attribute name="height" use="required" type="xs:integer"/>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+      <xs:attribute name="shadeColor" use="required" type="xs:NCName"/>
+      <xs:attribute name="symMark" use="required" type="xs:NCName"/>
+      <xs:attribute name="textColor" use="required"/>
+      <xs:attribute name="useFontSpace" use="required" type="xs:integer"/>
+      <xs:attribute name="useKerning" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fontRef">
+    <xs:complexType>
+      <xs:attribute name="hangul" use="required" type="xs:integer"/>
+      <xs:attribute name="hanja" use="required" type="xs:integer"/>
+      <xs:attribute name="japanese" use="required" type="xs:integer"/>
+      <xs:attribute name="latin" use="required" type="xs:integer"/>
+      <xs:attribute name="other" use="required" type="xs:integer"/>
+      <xs:attribute name="symbol" use="required" type="xs:integer"/>
+      <xs:attribute name="user" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ratio">
+    <xs:complexType>
+      <xs:attribute name="hangul" use="required" type="xs:integer"/>
+      <xs:attribute name="hanja" use="required" type="xs:integer"/>
+      <xs:attribute name="japanese" use="required" type="xs:integer"/>
+      <xs:attribute name="latin" use="required" type="xs:integer"/>
+      <xs:attribute name="other" use="required" type="xs:integer"/>
+      <xs:attribute name="symbol" use="required" type="xs:integer"/>
+      <xs:attribute name="user" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="spacing">
+    <xs:complexType>
+      <xs:attribute name="hangul" use="required" type="xs:integer"/>
+      <xs:attribute name="hanja" use="required" type="xs:integer"/>
+      <xs:attribute name="japanese" use="required" type="xs:integer"/>
+      <xs:attribute name="latin" use="required" type="xs:integer"/>
+      <xs:attribute name="other" use="required" type="xs:integer"/>
+      <xs:attribute name="symbol" use="required" type="xs:integer"/>
+      <xs:attribute name="user" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="relSz">
+    <xs:complexType>
+      <xs:attribute name="hangul" use="required" type="xs:integer"/>
+      <xs:attribute name="hanja" use="required" type="xs:integer"/>
+      <xs:attribute name="japanese" use="required" type="xs:integer"/>
+      <xs:attribute name="latin" use="required" type="xs:integer"/>
+      <xs:attribute name="other" use="required" type="xs:integer"/>
+      <xs:attribute name="symbol" use="required" type="xs:integer"/>
+      <xs:attribute name="user" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="offset">
+    <xs:complexType>
+      <xs:attribute name="hangul" use="required" type="xs:integer"/>
+      <xs:attribute name="hanja" use="required" type="xs:integer"/>
+      <xs:attribute name="japanese" use="required" type="xs:integer"/>
+      <xs:attribute name="latin" use="required" type="xs:integer"/>
+      <xs:attribute name="other" use="required" type="xs:integer"/>
+      <xs:attribute name="symbol" use="required" type="xs:integer"/>
+      <xs:attribute name="user" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tabProperties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="hh:tabPr"/>
+      </xs:sequence>
+      <xs:attribute name="itemCnt" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tabPr">
+    <xs:complexType>
+      <xs:attribute name="autoTabLeft" use="required" type="xs:integer"/>
+      <xs:attribute name="autoTabRight" use="required" type="xs:integer"/>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="numberings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="hh:numbering"/>
+      </xs:sequence>
+      <xs:attribute name="itemCnt" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="numbering">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="hh:paraHead"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+      <xs:attribute name="start" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="paraHead">
+    <xs:complexType mixed="true">
+      <xs:attribute name="align" use="required" type="xs:NCName"/>
+      <xs:attribute name="autoIndent" use="required" type="xs:integer"/>
+      <xs:attribute name="charPrIDRef" use="required" type="xs:integer"/>
+      <xs:attribute name="checkable" use="required" type="xs:integer"/>
+      <xs:attribute name="level" use="required" type="xs:integer"/>
+      <xs:attribute name="numFormat" use="required" type="xs:NCName"/>
+      <xs:attribute name="start" use="required" type="xs:integer"/>
+      <xs:attribute name="textOffset" use="required" type="xs:integer"/>
+      <xs:attribute name="textOffsetType" use="required" type="xs:NCName"/>
+      <xs:attribute name="useInstWidth" use="required" type="xs:integer"/>
+      <xs:attribute name="widthAdjust" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="paraProperties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="hh:paraPr"/>
+      </xs:sequence>
+      <xs:attribute name="itemCnt" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="paraPr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="hh:align"/>
+        <xs:choice>
+          <xs:element ref="hh:heading"/>
+          <xs:element ref="hp:switch"/>
+        </xs:choice>
+        <xs:element ref="hh:breakSetting"/>
+        <xs:element ref="hh:autoSpacing"/>
+        <xs:element ref="hh:margin"/>
+        <xs:element ref="hh:lineSpacing"/>
+        <xs:element ref="hh:border"/>
+      </xs:sequence>
+      <xs:attribute name="checked" use="required" type="xs:integer"/>
+      <xs:attribute name="condense" use="required" type="xs:integer"/>
+      <xs:attribute name="fontLineHeight" use="required" type="xs:integer"/>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+      <xs:attribute name="snapToGrid" use="required" type="xs:integer"/>
+      <xs:attribute name="suppressLineNumbers" use="required" type="xs:integer"/>
+      <xs:attribute name="tabPrIDRef" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="align">
+    <xs:complexType>
+      <xs:attribute name="horizontal" use="required" type="xs:NCName"/>
+      <xs:attribute name="vertical" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="breakSetting">
+    <xs:complexType>
+      <xs:attribute name="breakLatinWord" use="required" type="xs:NCName"/>
+      <xs:attribute name="breakNonLatinWord" use="required" type="xs:NCName"/>
+      <xs:attribute name="keepLines" use="required" type="xs:integer"/>
+      <xs:attribute name="keepWithNext" use="required" type="xs:integer"/>
+      <xs:attribute name="lineWrap" use="required" type="xs:NCName"/>
+      <xs:attribute name="pageBreakBefore" use="required" type="xs:integer"/>
+      <xs:attribute name="widowOrphan" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="autoSpacing">
+    <xs:complexType>
+      <xs:attribute name="eAsianEng" use="required" type="xs:integer"/>
+      <xs:attribute name="eAsianNum" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="margin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="hc:intent"/>
+        <xs:element ref="hc:left"/>
+        <xs:element ref="hc:right"/>
+        <xs:element ref="hc:prev"/>
+        <xs:element ref="hc:next"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="lineSpacing">
+    <xs:complexType>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+      <xs:attribute name="unit" use="required" type="xs:NCName"/>
+      <xs:attribute name="value" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="border">
+    <xs:complexType>
+      <xs:attribute name="borderFillIDRef" use="required" type="xs:integer"/>
+      <xs:attribute name="connect" use="required" type="xs:integer"/>
+      <xs:attribute name="ignoreMargin" use="required" type="xs:integer"/>
+      <xs:attribute name="offsetBottom" use="required" type="xs:integer"/>
+      <xs:attribute name="offsetLeft" use="required" type="xs:integer"/>
+      <xs:attribute name="offsetRight" use="required" type="xs:integer"/>
+      <xs:attribute name="offsetTop" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="styles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="hh:style"/>
+      </xs:sequence>
+      <xs:attribute name="itemCnt" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="style">
+    <xs:complexType>
+      <xs:attribute name="charPrIDRef" use="required" type="xs:integer"/>
+      <xs:attribute name="engName" use="required"/>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+      <xs:attribute name="langID" use="required" type="xs:integer"/>
+      <xs:attribute name="lockForm" use="required" type="xs:integer"/>
+      <xs:attribute name="name" use="required"/>
+      <xs:attribute name="nextStyleIDRef" use="required" type="xs:integer"/>
+      <xs:attribute name="paraPrIDRef" use="required" type="xs:integer"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="compatibleDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="hh:layoutCompatibility"/>
+      </xs:sequence>
+      <xs:attribute name="targetProgram" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="layoutCompatibility">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="docOption">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="hh:linkinfo"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="linkinfo">
+    <xs:complexType>
+      <xs:attribute name="footnoteInherit" use="required" type="xs:integer"/>
+      <xs:attribute name="pageInherit" use="required" type="xs:integer"/>
+      <xs:attribute name="path" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="trackchageConfig">
+    <xs:complexType>
+      <xs:attribute name="flags" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="heading">
+    <xs:complexType>
+      <xs:attribute name="idRef" use="required" type="xs:integer"/>
+      <xs:attribute name="level" use="required" type="xs:integer"/>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

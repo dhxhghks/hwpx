@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.idpf.org/2007/opf/" xmlns:opf="http://www.idpf.org/2007/opf/">
+  <xs:element name="package">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="opf:metadata"/>
+        <xs:element ref="opf:manifest"/>
+        <xs:element ref="opf:spine"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required"/>
+      <xs:attribute name="unique-identifier" use="required"/>
+      <xs:attribute name="version" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="metadata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="opf:title"/>
+        <xs:element ref="opf:language"/>
+        <xs:element maxOccurs="unbounded" ref="opf:meta"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="title">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="language" type="xs:NCName"/>
+  <xs:element name="meta">
+    <xs:complexType>
+      <xs:attribute name="content" use="required" type="xs:NCName"/>
+      <xs:attribute name="name" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="manifest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="opf:item"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="item">
+    <xs:complexType>
+      <xs:attribute name="href" use="required"/>
+      <xs:attribute name="id" use="required" type="xs:NCName"/>
+      <xs:attribute name="media-type" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="spine">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="opf:itemref"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="itemref">
+    <xs:complexType>
+      <xs:attribute name="idref" use="required" type="xs:NCName"/>
+      <xs:attribute name="linear" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

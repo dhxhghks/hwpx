@@ -1,0 +1,1965 @@
+
+kr/co/hancom/hwpml/_2011/core/FillBrush.java,290
+package kr.co.hancom.hwpml._2011.core;kr.co.hancom.hwpml._2011.core9,347
+public class FillBrush {FillBrush42,1278
+    protected WinBrush winBrush;winBrush45,1337
+    public WinBrush getWinBrush() {getWinBrush55,1529
+    public void setWinBrush(WinBrush value) {setWinBrush67,1759
+
+kr/co/hancom/hwpml/_2011/core/Intent.java,414
+package kr.co.hancom.hwpml._2011.core;kr.co.hancom.hwpml._2011.core9,347
+public class Intent {Intent43,1523
+    protected String unit;unit48,1686
+    protected BigInteger value;value50,1764
+    public String getUnit() {getUnit60,1949
+    public void setUnit(String value) {setUnit72,2163
+    public BigInteger getValue() {getValue84,2394
+    public void setValue(BigInteger value) {setValue96,2619
+
+kr/co/hancom/hwpml/_2011/core/Left.java,410
+package kr.co.hancom.hwpml._2011.core;kr.co.hancom.hwpml._2011.core9,347
+public class Left {Left43,1521
+    protected String unit;unit48,1682
+    protected BigInteger value;value50,1760
+    public String getUnit() {getUnit60,1945
+    public void setUnit(String value) {setUnit72,2159
+    public BigInteger getValue() {getValue84,2390
+    public void setValue(BigInteger value) {setValue96,2615
+
+kr/co/hancom/hwpml/_2011/core/Next.java,410
+package kr.co.hancom.hwpml._2011.core;kr.co.hancom.hwpml._2011.core9,347
+public class Next {Next43,1521
+    protected String unit;unit48,1682
+    protected BigInteger value;value50,1760
+    public String getUnit() {getUnit60,1945
+    public void setUnit(String value) {setUnit72,2159
+    public BigInteger getValue() {getValue84,2390
+    public void setValue(BigInteger value) {setValue96,2615
+
+kr/co/hancom/hwpml/_2011/core/ObjectFactory.java,563
+package kr.co.hancom.hwpml._2011.core;kr.co.hancom.hwpml._2011.core9,347
+public class ObjectFactory {ObjectFactory29,1020
+    public ObjectFactory() {ObjectFactory36,1219
+    public FillBrush createFillBrush() {createFillBrush43,1327
+    public WinBrush createWinBrush() {createWinBrush51,1478
+    public Intent createIntent() {createIntent59,1624
+    public Left createLeft() {createLeft67,1762
+    public Right createRight() {createRight75,1895
+    public Prev createPrev() {createPrev83,2030
+    public Next createNext() {createNext91,2162
+
+kr/co/hancom/hwpml/_2011/core/package-info.java,75
+package kr.co.hancom.hwpml._2011.core;kr.co.hancom.hwpml._2011.core9,506
+
+kr/co/hancom/hwpml/_2011/core/Prev.java,410
+package kr.co.hancom.hwpml._2011.core;kr.co.hancom.hwpml._2011.core9,347
+public class Prev {Prev43,1521
+    protected String unit;unit48,1682
+    protected BigInteger value;value50,1760
+    public String getUnit() {getUnit60,1945
+    public void setUnit(String value) {setUnit72,2159
+    public BigInteger getValue() {getValue84,2390
+    public void setValue(BigInteger value) {setValue96,2615
+
+kr/co/hancom/hwpml/_2011/core/Right.java,412
+package kr.co.hancom.hwpml._2011.core;kr.co.hancom.hwpml._2011.core9,347
+public class Right {Right43,1522
+    protected String unit;unit48,1684
+    protected BigInteger value;value50,1762
+    public String getUnit() {getUnit60,1947
+    public void setUnit(String value) {setUnit72,2161
+    public BigInteger getValue() {getValue84,2392
+    public void setValue(BigInteger value) {setValue96,2617
+
+kr/co/hancom/hwpml/_2011/core/WinBrush.java,628
+package kr.co.hancom.hwpml._2011.core;kr.co.hancom.hwpml._2011.core9,347
+public class WinBrush {WinBrush42,1526
+    protected BigInteger alpha;alpha45,1602
+    protected String faceColor;faceColor48,1732
+    protected String hatchColor;hatchColor51,1863
+    public BigInteger getAlpha() {getAlpha61,2054
+    public void setAlpha(BigInteger value) {setAlpha73,2279
+    public String getFaceColor() {getFaceColor85,2516
+    public void setFaceColor(String value) {setFaceColor97,2745
+    public String getHatchColor() {getHatchColor109,2987
+    public void setHatchColor(String value) {setHatchColor121,3219
+
+kr/co/hancom/hwpml/_2011/head/Align.java,454
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Align {Align42,1501
+    protected String horizontal;horizontal47,1669
+    protected String vertical;vertical51,1846
+    public String getHorizontal() {getHorizontal61,2036
+    public void setHorizontal(String value) {setHorizontal73,2268
+    public String getVertical() {getVertical85,2510
+    public void setVertical(String value) {setVertical97,2736
+
+kr/co/hancom/hwpml/_2011/head/AutoSpacing.java,490
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class AutoSpacing {AutoSpacing40,1362
+    protected BigInteger eAsianEng;eAsianEng43,1445
+    protected BigInteger eAsianNum;eAsianNum45,1536
+    public BigInteger getEAsianEng() {getEAsianEng55,1734
+    public void setEAsianEng(BigInteger value) {setEAsianEng67,1971
+    public BigInteger getEAsianNum() {getEAsianNum79,2220
+    public void setEAsianNum(BigInteger value) {setEAsianNum91,2457
+
+kr/co/hancom/hwpml/_2011/head/BackSlash.java,618
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class BackSlash {BackSlash44,1638
+    protected BigInteger crooked;crooked47,1717
+    protected BigInteger isCounter;isCounter49,1806
+    protected String type;type53,1982
+    public BigInteger getCrooked() {getCrooked63,2169
+    public void setCrooked(BigInteger value) {setCrooked75,2400
+    public BigInteger getIsCounter() {getIsCounter87,2645
+    public void setIsCounter(BigInteger value) {setIsCounter99,2882
+    public String getType() {getType111,3122
+    public void setType(String value) {setType123,3336
+
+kr/co/hancom/hwpml/_2011/head/BeginNum.java,1103
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class BeginNum {BeginNum44,1778
+    protected BigInteger endnote;endnote47,1856
+    protected BigInteger equation;equation49,1944
+    protected BigInteger footnote;footnote51,2033
+    protected BigInteger page;page53,2118
+    protected BigInteger pic;pic55,2198
+    protected BigInteger tbl;tbl57,2277
+    public BigInteger getEndnote() {getEndnote67,2467
+    public void setEndnote(BigInteger value) {setEndnote79,2698
+    public BigInteger getEquation() {getEquation91,2942
+    public void setEquation(BigInteger value) {setEquation103,3176
+    public BigInteger getFootnote() {getFootnote115,3422
+    public void setFootnote(BigInteger value) {setFootnote127,3656
+    public BigInteger getPage() {getPage139,3898
+    public void setPage(BigInteger value) {setPage151,4120
+    public BigInteger getPic() {getPic163,4353
+    public void setPic(BigInteger value) {setPic175,4572
+    public BigInteger getTbl() {getTbl187,4803
+    public void setTbl(BigInteger value) {setTbl199,5022
+
+kr/co/hancom/hwpml/_2011/head/Bold.java,108
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Bold {Bold36,1059
+
+kr/co/hancom/hwpml/_2011/head/Border.java,1489
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Border {Border45,1920
+    protected BigInteger borderFillIDRef;borderFillIDRef48,2004
+    protected BigInteger connect;connect50,2099
+    protected BigInteger ignoreMargin;ignoreMargin52,2191
+    protected BigInteger offsetBottom;offsetBottom54,2288
+    protected BigInteger offsetLeft;offsetLeft56,2383
+    protected BigInteger offsetRight;offsetRight58,2477
+    protected BigInteger offsetTop;offsetTop60,2570
+    public BigInteger getBorderFillIDRef() {getBorderFillIDRef70,2774
+    public void setBorderFillIDRef(BigInteger value) {setBorderFillIDRef82,3029
+    public BigInteger getConnect() {getConnect94,3288
+    public void setConnect(BigInteger value) {setConnect106,3519
+    public BigInteger getIgnoreMargin() {getIgnoreMargin118,3767
+    public void setIgnoreMargin(BigInteger value) {setIgnoreMargin130,4013
+    public BigInteger getOffsetBottom() {getOffsetBottom142,4271
+    public void setOffsetBottom(BigInteger value) {setOffsetBottom154,4517
+    public BigInteger getOffsetLeft() {getOffsetLeft166,4773
+    public void setOffsetLeft(BigInteger value) {setOffsetLeft178,5013
+    public BigInteger getOffsetRight() {getOffsetRight190,5266
+    public void setOffsetRight(BigInteger value) {setOffsetRight202,5509
+    public BigInteger getOffsetTop() {getOffsetTop214,5762
+    public void setOffsetTop(BigInteger value) {setOffsetTop226,5999
+
+kr/co/hancom/hwpml/_2011/head/BorderFill.java,2512
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class BorderFill {BorderFill67,2874
+    protected Slash slash;slash70,2934
+    protected BackSlash backSlash;backSlash72,2994
+    protected LeftBorder leftBorder;leftBorder74,3062
+    protected RightBorder rightBorder;rightBorder76,3132
+    protected TopBorder topBorder;topBorder78,3204
+    protected BottomBorder bottomBorder;bottomBorder80,3272
+    protected Diagonal diagonal;diagonal81,3313
+    protected FillBrush fillBrush;fillBrush83,3417
+    protected BigInteger breakCellSeparateLine;breakCellSeparateLine85,3519
+    protected String centerLine;centerLine89,3713
+    protected BigInteger id;id91,3794
+    protected BigInteger shadow;shadow93,3875
+    protected BigInteger threeD;threeD95,3960
+    public Slash getSlash() {getSlash105,4146
+    public void setSlash(Slash value) {setSlash117,4361
+    public BackSlash getBackSlash() {getBackSlash129,4596
+    public void setBackSlash(BackSlash value) {setBackSlash141,4831
+    public LeftBorder getLeftBorder() {getLeftBorder153,5080
+    public void setLeftBorder(LeftBorder value) {setLeftBorder165,5320
+    public RightBorder getRightBorder() {getRightBorder177,5574
+    public void setRightBorder(RightBorder value) {setRightBorder189,5819
+    public TopBorder getTopBorder() {getTopBorder201,6072
+    public void setTopBorder(TopBorder value) {setTopBorder213,6307
+    public BottomBorder getBottomBorder() {getBottomBorder225,6560
+    public void setBottomBorder(BottomBorder value) {setBottomBorder237,6810
+    public Diagonal getDiagonal() {getDiagonal249,7064
+    public void setDiagonal(Diagonal value) {setDiagonal261,7294
+    public FillBrush getFillBrush() {getFillBrush273,7538
+    public void setFillBrush(FillBrush value) {setFillBrush285,7773
+    public BigInteger getBreakCellSeparateLine() {getBreakCellSeparateLine297,8033
+    public void setBreakCellSeparateLine(BigInteger value) {setBreakCellSeparateLine309,8306
+    public String getCenterLine() {getCenterLine321,8576
+    public void setCenterLine(String value) {setCenterLine333,8808
+    public BigInteger getId() {getId345,9048
+    public void setId(BigInteger value) {setId357,9264
+    public BigInteger getShadow() {getShadow369,9496
+    public void setShadow(BigInteger value) {setShadow381,9724
+    public BigInteger getThreeD() {getThreeD393,9964
+    public void setThreeD(BigInteger value) {setThreeD405,10192
+
+kr/co/hancom/hwpml/_2011/head/BorderFills.java,425
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class BorderFills {BorderFills47,1541
+    protected List<BorderFill> borderFill;borderFill50,1602
+    protected BigInteger itemCnt;itemCnt52,1698
+    public List<BorderFill> getBorderFill() {getBorderFill76,2372
+    public BigInteger getItemCnt() {getItemCnt91,2714
+    public void setItemCnt(BigInteger value) {setItemCnt103,2945
+
+kr/co/hancom/hwpml/_2011/head/BottomBorder.java,565
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class BottomBorder {BottomBorder43,1618
+    protected String color;color47,1741
+    protected String type;type51,1909
+    protected String width;width54,2030
+    public String getColor() {getColor64,2212
+    public void setColor(String value) {setColor76,2429
+    public String getType() {getType88,2657
+    public void setType(String value) {setType100,2871
+    public String getWidth() {getWidth112,3098
+    public void setWidth(String value) {setWidth124,3315
+
+kr/co/hancom/hwpml/_2011/head/BreakSetting.java,1526
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class BreakSetting {BreakSetting48,2109
+    protected String breakLatinWord;breakLatinWord53,2288
+    protected String breakNonLatinWord;breakNonLatinWord57,2478
+    protected BigInteger keepLines;keepLines59,2573
+    protected BigInteger keepWithNext;keepWithNext61,2667
+    protected String lineWrap;lineWrap65,2850
+    protected BigInteger pageBreakBefore;pageBreakBefore67,2942
+    protected BigInteger widowOrphan;widowOrphan69,3041
+    public String getBreakLatinWord() {getBreakLatinWord79,3242
+    public void setBreakLatinWord(String value) {setBreakLatinWord91,3486
+    public String getBreakNonLatinWord() {getBreakNonLatinWord103,3745
+    public void setBreakNonLatinWord(String value) {setBreakNonLatinWord115,3998
+    public BigInteger getKeepLines() {getKeepLines127,4259
+    public void setKeepLines(BigInteger value) {setKeepLines139,4496
+    public BigInteger getKeepWithNext() {getKeepWithNext151,4748
+    public void setKeepWithNext(BigInteger value) {setKeepWithNext163,4994
+    public String getLineWrap() {getLineWrap175,5244
+    public void setLineWrap(String value) {setLineWrap187,5470
+    public BigInteger getPageBreakBefore() {getPageBreakBefore199,5719
+    public void setPageBreakBefore(BigInteger value) {setPageBreakBefore211,5974
+    public BigInteger getWidowOrphan() {getWidowOrphan223,6237
+    public void setWidowOrphan(BigInteger value) {setWidowOrphan235,6480
+
+kr/co/hancom/hwpml/_2011/head/Bullet.java,753
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Bullet {Bullet48,1722
+    protected ParaHead paraHead;paraHead51,1778
+    protected String _char;_char54,1904
+    protected BigInteger id;id56,1980
+    protected BigInteger useImage;useImage58,2063
+    public ParaHead getParaHead() {getParaHead68,2257
+    public void setParaHead(ParaHead value) {setParaHead80,2487
+    public String getChar() {getChar92,2723
+    public void setChar(String value) {setChar104,2938
+    public BigInteger getId() {getId116,3167
+    public void setId(BigInteger value) {setId128,3383
+    public BigInteger getUseImage() {getUseImage140,3617
+    public void setUseImage(BigInteger value) {setUseImage152,3851
+
+kr/co/hancom/hwpml/_2011/head/Bullets.java,393
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Bullets {Bullets47,1529
+    protected List<Bullet> bullet;bullet50,1586
+    protected BigInteger itemCnt;itemCnt52,1674
+    public List<Bullet> getBullet() {getBullet76,2332
+    public BigInteger getItemCnt() {getItemCnt91,2650
+    public void setItemCnt(BigInteger value) {setItemCnt103,2881
+
+kr/co/hancom/hwpml/_2011/head/CharPr.java,2826
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class CharPr {CharPr71,3165
+    protected FontRef fontRef;fontRef74,3221
+    protected Ratio ratio;ratio76,3285
+    protected Spacing spacing;spacing78,3345
+    protected RelSz relSz;relSz80,3409
+    protected Offset offset;offset82,3469
+    protected Bold bold;bold83,3498
+    protected Shadow shadow;shadow84,3523
+    protected Underline underline;underline85,3552
+    protected BigInteger borderFillIDRef;borderFillIDRef87,3648
+    protected BigInteger height;height89,3742
+    protected BigInteger id;id91,3823
+    protected String shadeColor;shadeColor95,3998
+    protected String symMark;symMark99,4174
+    protected String textColor;textColor102,4302
+    protected BigInteger useFontSpace;useFontSpace104,4392
+    protected BigInteger useKerning;useKerning106,4487
+    public FontRef getFontRef() {getFontRef116,4681
+    public void setFontRef(FontRef value) {setFontRef128,4906
+    public Ratio getRatio() {getRatio140,5139
+    public void setRatio(Ratio value) {setRatio152,5354
+    public Spacing getSpacing() {getSpacing164,5585
+    public void setSpacing(Spacing value) {setSpacing176,5810
+    public RelSz getRelSz() {getRelSz188,6043
+    public void setRelSz(RelSz value) {setRelSz200,6258
+    public Offset getOffset() {getOffset212,6487
+    public void setOffset(Offset value) {setOffset224,6707
+    public Bold getBold() {getBold236,6935
+    public void setBold(Bold value) {setBold248,7145
+    public Shadow getShadow() {getShadow260,7371
+    public void setShadow(Shadow value) {setShadow272,7591
+    public Underline getUnderline() {getUnderline284,7829
+    public void setUnderline(Underline value) {setUnderline296,8064
+    public BigInteger getBorderFillIDRef() {getBorderFillIDRef308,8318
+    public void setBorderFillIDRef(BigInteger value) {setBorderFillIDRef320,8573
+    public BigInteger getHeight() {getHeight332,8831
+    public void setHeight(BigInteger value) {setHeight344,9059
+    public BigInteger getId() {getId356,9295
+    public void setId(BigInteger value) {setId368,9511
+    public String getShadeColor() {getShadeColor380,9743
+    public void setShadeColor(String value) {setShadeColor392,9975
+    public String getSymMark() {getSymMark404,10216
+    public void setSymMark(String value) {setSymMark416,10439
+    public String getTextColor() {getTextColor428,10676
+    public void setTextColor(String value) {setTextColor440,10905
+    public BigInteger getUseFontSpace() {getUseFontSpace452,11153
+    public void setUseFontSpace(BigInteger value) {setUseFontSpace464,11399
+    public BigInteger getUseKerning() {getUseKerning476,11655
+    public void setUseKerning(BigInteger value) {setUseKerning488,11895
+
+kr/co/hancom/hwpml/_2011/head/CharProperties.java,407
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class CharProperties {CharProperties47,1536
+    protected List<CharPr> charPr;charPr50,1600
+    protected BigInteger itemCnt;itemCnt52,1688
+    public List<CharPr> getCharPr() {getCharPr76,2346
+    public BigInteger getItemCnt() {getItemCnt91,2664
+    public void setItemCnt(BigInteger value) {setItemCnt103,2895
+
+kr/co/hancom/hwpml/_2011/head/CompatibleDocument.java,604
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class CompatibleDocument {CompatibleDocument47,1645
+    protected LayoutCompatibility layoutCompatibility;layoutCompatibility50,1713
+    protected String targetProgram;targetProgram54,1917
+    public LayoutCompatibility getLayoutCompatibility() {getLayoutCompatibility64,2134
+    public void setLayoutCompatibility(LayoutCompatibility value) {setLayoutCompatibility76,2419
+    public String getTargetProgram() {getTargetProgram88,2697
+    public void setTargetProgram(String value) {setTargetProgram100,2938
+
+kr/co/hancom/hwpml/_2011/head/Diagonal.java,557
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Diagonal {Diagonal43,1614
+    protected String color;color47,1733
+    protected String type;type51,1901
+    protected String width;width54,2022
+    public String getColor() {getColor64,2204
+    public void setColor(String value) {setColor76,2421
+    public String getType() {getType88,2649
+    public void setType(String value) {setType100,2863
+    public String getWidth() {getWidth112,3090
+    public void setWidth(String value) {setWidth124,3307
+
+kr/co/hancom/hwpml/_2011/head/DocOption.java,290
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class DocOption {DocOption42,1278
+    protected Linkinfo linkinfo;linkinfo45,1337
+    public Linkinfo getLinkinfo() {getLinkinfo55,1529
+    public void setLinkinfo(Linkinfo value) {setLinkinfo67,1759
+
+kr/co/hancom/hwpml/_2011/head/Font.java,1087
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Font {Font52,2039
+    protected SubstFont substFont;substFont54,2060
+    protected TypeInfo typeInfo;typeInfo55,2095
+    protected String face;face58,2221
+    protected BigInteger id;id60,2296
+    protected BigInteger isEmbedded;isEmbedded62,2381
+    protected String type;type66,2558
+    public SubstFont getSubstFont() {getSubstFont76,2746
+    public void setSubstFont(SubstFont value) {setSubstFont88,2981
+    public TypeInfo getTypeInfo() {getTypeInfo100,3226
+    public void setTypeInfo(TypeInfo value) {setTypeInfo112,3456
+    public String getFace() {getFace124,3692
+    public void setFace(String value) {setFace136,3906
+    public BigInteger getId() {getId148,4134
+    public void setId(BigInteger value) {setId160,4350
+    public BigInteger getIsEmbedded() {getIsEmbedded172,4586
+    public void setIsEmbedded(BigInteger value) {setIsEmbedded184,4826
+    public String getType() {getType196,5068
+    public void setType(String value) {setType208,5282
+
+kr/co/hancom/hwpml/_2011/head/Fontface.java,527
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Fontface {Fontface51,1806
+    protected List<Font> font;font54,1864
+    protected BigInteger fontCnt;fontCnt56,1948
+    protected String lang;lang60,2122
+    public List<Font> getFont() {getFont84,2765
+    public BigInteger getFontCnt() {getFontCnt99,3071
+    public void setFontCnt(BigInteger value) {setFontCnt111,3302
+    public String getLang() {getLang123,3538
+    public void setLang(String value) {setLang135,3752
+
+kr/co/hancom/hwpml/_2011/head/Fontfaces.java,409
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Fontfaces {Fontfaces47,1535
+    protected List<Fontface> fontface;fontface50,1594
+    protected BigInteger itemCnt;itemCnt52,1686
+    public List<Fontface> getFontface() {getFontface76,2352
+    public BigInteger getItemCnt() {getItemCnt91,2682
+    public void setItemCnt(BigInteger value) {setItemCnt103,2913
+
+kr/co/hancom/hwpml/_2011/head/FontRef.java,1269
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class FontRef {FontRef45,1884
+    protected BigInteger hangul;hangul48,1960
+    protected BigInteger hanja;hanja50,2044
+    protected BigInteger japanese;japanese52,2130
+    protected BigInteger latin;latin54,2216
+    protected BigInteger other;other56,2299
+    protected BigInteger symbol;symbol58,2383
+    protected BigInteger user;user60,2466
+    public BigInteger getHangul() {getHangul70,2656
+    public void setHangul(BigInteger value) {setHangul82,2884
+    public BigInteger getHanja() {getHanja94,3123
+    public void setHanja(BigInteger value) {setHanja106,3348
+    public BigInteger getJapanese() {getJapanese118,3588
+    public void setJapanese(BigInteger value) {setJapanese130,3822
+    public BigInteger getLatin() {getLatin142,4065
+    public void setLatin(BigInteger value) {setLatin154,4290
+    public BigInteger getOther() {getOther166,4527
+    public void setOther(BigInteger value) {setOther178,4752
+    public BigInteger getSymbol() {getSymbol190,4990
+    public void setSymbol(BigInteger value) {setSymbol202,5218
+    public BigInteger getUser() {getUser214,5456
+    public void setUser(BigInteger value) {setUser226,5678
+
+kr/co/hancom/hwpml/_2011/head/Head.java,1480
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Head {Head55,2029
+    protected BeginNum beginNum;beginNum58,2083
+    protected RefList refList;refList60,2149
+    protected CompatibleDocument compatibleDocument;compatibleDocument62,2213
+    protected DocOption docOption;docOption64,2299
+    protected TrackchageConfig trackchageConfig;trackchageConfig66,2367
+    protected BigInteger secCnt;secCnt68,2468
+    protected BigDecimal version;version70,2554
+    public BeginNum getBeginNum() {getBeginNum80,2747
+    public void setBeginNum(BeginNum value) {setBeginNum92,2977
+    public RefList getRefList() {getRefList104,3217
+    public void setRefList(RefList value) {setRefList116,3442
+    public CompatibleDocument getCompatibleDocument() {getCompatibleDocument128,3701
+    public void setCompatibleDocument(CompatibleDocument value) {setCompatibleDocument140,3981
+    public DocOption getDocOption() {getDocOption152,4255
+    public void setDocOption(DocOption value) {setDocOption164,4490
+    public TrackchageConfig getTrackchageConfig() {getTrackchageConfig176,4751
+    public void setTrackchageConfig(TrackchageConfig value) {setTrackchageConfig188,5021
+    public BigInteger getSecCnt() {getSecCnt200,5287
+    public void setSecCnt(BigInteger value) {setSecCnt212,5515
+    public BigDecimal getVersion() {getVersion224,5756
+    public void setVersion(BigDecimal value) {setVersion236,5987
+
+kr/co/hancom/hwpml/_2011/head/Heading.java,578
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Heading {Heading44,1630
+    protected BigInteger idRef;idRef47,1705
+    protected BigInteger level;level49,1788
+    protected String type;type53,1960
+    public BigInteger getIdRef() {getIdRef63,2145
+    public void setIdRef(BigInteger value) {setIdRef75,2370
+    public BigInteger getLevel() {getLevel87,2607
+    public void setLevel(BigInteger value) {setLevel99,2832
+    public String getType() {getType111,3064
+    public void setType(String value) {setType123,3278
+
+kr/co/hancom/hwpml/_2011/head/LayoutCompatibility.java,138
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class LayoutCompatibility {LayoutCompatibility36,1074
+
+kr/co/hancom/hwpml/_2011/head/LeftBorder.java,561
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class LeftBorder {LeftBorder43,1616
+    protected String color;color47,1737
+    protected String type;type51,1905
+    protected String width;width54,2026
+    public String getColor() {getColor64,2208
+    public void setColor(String value) {setColor76,2425
+    public String getType() {getType88,2653
+    public void setType(String value) {setType100,2867
+    public String getWidth() {getWidth112,3094
+    public void setWidth(String value) {setWidth124,3311
+
+kr/co/hancom/hwpml/_2011/head/LineSpacing.java,569
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class LineSpacing {LineSpacing44,1632
+    protected String type;type49,1800
+    protected String unit;unit53,1967
+    protected BigInteger value;value55,2045
+    public String getType() {getType65,2230
+    public void setType(String value) {setType77,2444
+    public String getUnit() {getUnit89,2670
+    public void setUnit(String value) {setUnit101,2884
+    public BigInteger getValue() {getValue113,3115
+    public void setValue(BigInteger value) {setValue125,3340
+
+kr/co/hancom/hwpml/_2011/head/Linkinfo.java,676
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Linkinfo {Linkinfo42,1526
+    protected BigInteger footnoteInherit;footnoteInherit45,1612
+    protected BigInteger pageInherit;pageInherit47,1711
+    protected String path;path50,1842
+    public BigInteger getFootnoteInherit() {getFootnoteInherit60,2037
+    public void setFootnoteInherit(BigInteger value) {setFootnoteInherit72,2292
+    public BigInteger getPageInherit() {getPageInherit84,2555
+    public void setPageInherit(BigInteger value) {setPageInherit96,2798
+    public String getPath() {getPath108,3042
+    public void setPath(String value) {setPath120,3256
+
+kr/co/hancom/hwpml/_2011/head/Margin.java,827
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Margin {Margin55,1859
+    protected Intent intent;intent58,1970
+    protected Left left;left60,2087
+    protected Right right;right62,2200
+    protected Prev prev;prev64,2315
+    protected Next next;next66,2428
+    public Intent getIntent() {getIntent76,2608
+    public void setIntent(Intent value) {setIntent88,2828
+    public Left getLeft() {getLeft100,3056
+    public void setLeft(Left value) {setLeft112,3266
+    public Right getRight() {getRight124,3490
+    public void setRight(Right value) {setRight136,3705
+    public Prev getPrev() {getPrev148,3930
+    public void setPrev(Prev value) {setPrev160,4140
+    public Next getNext() {getNext172,4362
+    public void setNext(Next value) {setNext184,4572
+
+kr/co/hancom/hwpml/_2011/head/Numbering.java,541
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Numbering {Numbering48,1636
+    protected List<ParaHead> paraHead;paraHead51,1695
+    protected BigInteger id;id53,1782
+    protected BigInteger start;start55,1862
+    public List<ParaHead> getParaHead() {getParaHead79,2526
+    public BigInteger getId() {getId94,2851
+    public void setId(BigInteger value) {setId106,3067
+    public BigInteger getStart() {getStart118,3298
+    public void setStart(BigInteger value) {setStart130,3523
+
+kr/co/hancom/hwpml/_2011/head/Numberings.java,417
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Numberings {Numberings47,1538
+    protected List<Numbering> numbering;numbering50,1598
+    protected BigInteger itemCnt;itemCnt52,1692
+    public List<Numbering> getNumbering() {getNumbering76,2362
+    public BigInteger getItemCnt() {getItemCnt91,2698
+    public void setItemCnt(BigInteger value) {setItemCnt103,2929
+
+kr/co/hancom/hwpml/_2011/head/ObjectFactory.java,3463
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class ObjectFactory {ObjectFactory29,1020
+    public ObjectFactory() {ObjectFactory36,1219
+    public Head createHead() {createHead43,1322
+    public BeginNum createBeginNum() {createBeginNum51,1458
+    public RefList createRefList() {createRefList59,1605
+    public Fontfaces createFontfaces() {createFontfaces67,1751
+    public Fontface createFontface() {createFontface75,1902
+    public Font createFont() {createFont83,2046
+    public SubstFont createSubstFont() {createSubstFont91,2183
+    public TypeInfo createTypeInfo() {createTypeInfo99,2334
+    public BorderFills createBorderFills() {createBorderFills107,2485
+    public BorderFill createBorderFill() {createBorderFill115,2644
+    public Slash createSlash() {createSlash123,2795
+    public BackSlash createBackSlash() {createBackSlash131,2935
+    public LeftBorder createLeftBorder() {createLeftBorder139,3088
+    public RightBorder createRightBorder() {createRightBorder147,3245
+    public TopBorder createTopBorder() {createTopBorder155,3403
+    public BottomBorder createBottomBorder() {createBottomBorder163,3558
+    public Diagonal createDiagonal() {createDiagonal171,3718
+    public CharProperties createCharProperties() {createCharProperties179,3872
+    public CharPr createCharPr() {createCharPr187,4036
+    public FontRef createFontRef() {createFontRef195,4177
+    public Ratio createRatio() {createRatio203,4319
+    public Spacing createSpacing() {createSpacing211,4457
+    public RelSz createRelSz() {createRelSz219,4599
+    public Offset createOffset() {createOffset227,4736
+    public Bold createBold() {createBold235,4874
+    public Shadow createShadow() {createShadow243,5008
+    public Underline createUnderline() {createUnderline251,5151
+    public TabProperties createTabProperties() {createTabProperties259,5307
+    public TabPr createTabPr() {createTabPr267,5467
+    public TabItem createTabItem() {createTabItem275,5605
+    public Numberings createNumberings() {createNumberings283,5752
+    public Numbering createNumbering() {createNumbering291,5907
+    public ParaHead createParaHead() {createParaHead299,6058
+    public Bullets createBullets() {createBullets307,6205
+    public Bullet createBullet() {createBullet315,6348
+    public ParaProperties createParaProperties() {createParaProperties323,6496
+    public ParaPr createParaPr() {createParaPr331,6660
+    public Align createAlign() {createAlign339,6799
+    public Heading createHeading() {createHeading347,6937
+    public BreakSetting createBreakSetting() {createBreakSetting355,7086
+    public AutoSpacing createAutoSpacing() {createAutoSpacing363,7249
+    public Margin createMargin() {createMargin371,7404
+    public LineSpacing createLineSpacing() {createLineSpacing379,7549
+    public Border createBorder() {createBorder387,7704
+    public Styles createStyles() {createStyles395,7844
+    public Style createStyle() {createStyle403,7983
+    public CompatibleDocument createCompatibleDocument() {createCompatibleDocument411,8132
+    public LayoutCompatibility createLayoutCompatibility() {createLayoutCompatibility419,8321
+    public DocOption createDocOption() {createDocOption427,8503
+    public Linkinfo createLinkinfo() {createLinkinfo435,8654
+    public TrackchageConfig createTrackchageConfig() {createTrackchageConfig443,8810
+
+kr/co/hancom/hwpml/_2011/head/Offset.java,1267
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Offset {Offset45,1883
+    protected BigInteger hangul;hangul48,1958
+    protected BigInteger hanja;hanja50,2042
+    protected BigInteger japanese;japanese52,2128
+    protected BigInteger latin;latin54,2214
+    protected BigInteger other;other56,2297
+    protected BigInteger symbol;symbol58,2381
+    protected BigInteger user;user60,2464
+    public BigInteger getHangul() {getHangul70,2654
+    public void setHangul(BigInteger value) {setHangul82,2882
+    public BigInteger getHanja() {getHanja94,3121
+    public void setHanja(BigInteger value) {setHanja106,3346
+    public BigInteger getJapanese() {getJapanese118,3586
+    public void setJapanese(BigInteger value) {setJapanese130,3820
+    public BigInteger getLatin() {getLatin142,4063
+    public void setLatin(BigInteger value) {setLatin154,4288
+    public BigInteger getOther() {getOther166,4525
+    public void setOther(BigInteger value) {setOther178,4750
+    public BigInteger getSymbol() {getSymbol190,4988
+    public void setSymbol(BigInteger value) {setSymbol202,5216
+    public BigInteger getUser() {getUser214,5454
+    public void setUser(BigInteger value) {setUser226,5676
+
+kr/co/hancom/hwpml/_2011/head/package-info.java,75
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,506
+
+kr/co/hancom/hwpml/_2011/head/ParaHead.java,2299
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class ParaHead {ParaHead55,2583
+    protected String content;content58,2622
+    protected String align;align62,2793
+    protected BigInteger autoIndent;autoIndent64,2877
+    protected BigInteger charPrIDRef;charPrIDRef66,2971
+    protected BigInteger checkable;checkable68,3064
+    protected BigInteger level;level70,3151
+    protected String numFormat;numFormat74,3328
+    protected BigInteger start;start76,3394
+    protected BigInteger textOffset;textOffset78,3482
+    protected String textOffsetType;textOffsetType82,3669
+    protected BigInteger useInstWidth;useInstWidth84,3764
+    protected BigInteger widthAdjust;widthAdjust86,3860
+    public String getContent() {getContent96,4054
+    public void setContent(String value) {setContent108,4277
+    public String getAlign() {getAlign120,4510
+    public void setAlign(String value) {setAlign132,4727
+    public BigInteger getAutoIndent() {getAutoIndent144,4965
+    public void setAutoIndent(BigInteger value) {setAutoIndent156,5205
+    public BigInteger getCharPrIDRef() {getCharPrIDRef168,5458
+    public void setCharPrIDRef(BigInteger value) {setCharPrIDRef180,5701
+    public BigInteger getCheckable() {getCheckable192,5954
+    public void setCheckable(BigInteger value) {setCheckable204,6191
+    public BigInteger getLevel() {getLevel216,6436
+    public void setLevel(BigInteger value) {setLevel228,6661
+    public String getNumFormat() {getNumFormat240,6898
+    public void setNumFormat(String value) {setNumFormat252,7127
+    public BigInteger getStart() {getStart264,7368
+    public void setStart(BigInteger value) {setStart276,7593
+    public BigInteger getTextOffset() {getTextOffset288,7835
+    public void setTextOffset(BigInteger value) {setTextOffset300,8075
+    public String getTextOffsetType() {getTextOffsetType312,8327
+    public void setTextOffsetType(String value) {setTextOffsetType324,8571
+    public BigInteger getUseInstWidth() {getUseInstWidth336,8829
+    public void setUseInstWidth(BigInteger value) {setUseInstWidth348,9075
+    public BigInteger getWidthAdjust() {getWidthAdjust360,9332
+    public void setWidthAdjust(BigInteger value) {setWidthAdjust372,9575
+
+kr/co/hancom/hwpml/_2011/head/ParaPr.java,2856
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class ParaPr {ParaPr68,2941
+    protected Align align;align71,2997
+    protected Heading heading;heading72,3024
+    protected Switch _switch;_switch74,3148
+    protected BreakSetting breakSetting;breakSetting76,3211
+    protected AutoSpacing autoSpacing;autoSpacing78,3285
+    protected Margin margin;margin80,3357
+    protected LineSpacing lineSpacing;lineSpacing82,3419
+    protected Border border;border84,3491
+    protected BigInteger checked;checked86,3573
+    protected BigInteger condense;condense88,3661
+    protected BigInteger fontLineHeight;fontLineHeight90,3756
+    protected BigInteger id;id92,3845
+    protected BigInteger snapToGrid;snapToGrid94,3930
+    protected BigInteger suppressLineNumbers;suppressLineNumbers96,4032
+    protected BigInteger tabPrIDRef;tabPrIDRef98,4134
+    public Align getAlign() {getAlign108,4324
+    public void setAlign(Align value) {setAlign120,4539
+    public Heading getHeading() {getHeading132,4770
+    public void setHeading(Heading value) {setHeading144,4995
+    public Switch getSwitch() {getSwitch156,5230
+    public void setSwitch(Switch value) {setSwitch168,5451
+    public BreakSetting getBreakSetting() {getBreakSetting180,5696
+    public void setBreakSetting(BreakSetting value) {setBreakSetting192,5946
+    public AutoSpacing getAutoSpacing() {getAutoSpacing204,6206
+    public void setAutoSpacing(AutoSpacing value) {setAutoSpacing216,6451
+    public Margin getMargin() {getMargin228,6698
+    public void setMargin(Margin value) {setMargin240,6918
+    public LineSpacing getLineSpacing() {getLineSpacing252,7160
+    public void setLineSpacing(LineSpacing value) {setLineSpacing264,7405
+    public Border getBorder() {getBorder276,7652
+    public void setBorder(Border value) {setBorder288,7872
+    public BigInteger getChecked() {getChecked300,8109
+    public void setChecked(BigInteger value) {setChecked312,8340
+    public BigInteger getCondense() {getCondense324,8584
+    public void setCondense(BigInteger value) {setCondense336,8818
+    public BigInteger getFontLineHeight() {getFontLineHeight348,9070
+    public void setFontLineHeight(BigInteger value) {setFontLineHeight360,9322
+    public BigInteger getId() {getId372,9574
+    public void setId(BigInteger value) {setId384,9790
+    public BigInteger getSnapToGrid() {getSnapToGrid396,10026
+    public void setSnapToGrid(BigInteger value) {setSnapToGrid408,10266
+    public BigInteger getSuppressLineNumbers() {getSuppressLineNumbers420,10527
+    public void setSuppressLineNumbers(BigInteger value) {setSuppressLineNumbers432,10794
+    public BigInteger getTabPrIDRef() {getTabPrIDRef444,11064
+    public void setTabPrIDRef(BigInteger value) {setTabPrIDRef456,11304
+
+kr/co/hancom/hwpml/_2011/head/ParaProperties.java,407
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class ParaProperties {ParaProperties47,1536
+    protected List<ParaPr> paraPr;paraPr50,1600
+    protected BigInteger itemCnt;itemCnt52,1688
+    public List<ParaPr> getParaPr() {getParaPr76,2346
+    public BigInteger getItemCnt() {getItemCnt91,2664
+    public void setItemCnt(BigInteger value) {setItemCnt103,2895
+
+kr/co/hancom/hwpml/_2011/head/Ratio.java,1265
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Ratio {Ratio45,1882
+    protected BigInteger hangul;hangul48,1956
+    protected BigInteger hanja;hanja50,2040
+    protected BigInteger japanese;japanese52,2126
+    protected BigInteger latin;latin54,2212
+    protected BigInteger other;other56,2295
+    protected BigInteger symbol;symbol58,2379
+    protected BigInteger user;user60,2462
+    public BigInteger getHangul() {getHangul70,2652
+    public void setHangul(BigInteger value) {setHangul82,2880
+    public BigInteger getHanja() {getHanja94,3119
+    public void setHanja(BigInteger value) {setHanja106,3344
+    public BigInteger getJapanese() {getJapanese118,3584
+    public void setJapanese(BigInteger value) {setJapanese130,3818
+    public BigInteger getLatin() {getLatin142,4061
+    public void setLatin(BigInteger value) {setLatin154,4286
+    public BigInteger getOther() {getOther166,4523
+    public void setOther(BigInteger value) {setOther178,4748
+    public BigInteger getSymbol() {getSymbol190,4986
+    public void setSymbol(BigInteger value) {setSymbol202,5214
+    public BigInteger getUser() {getUser214,5452
+    public void setUser(BigInteger value) {setUser226,5674
+
+kr/co/hancom/hwpml/_2011/head/RefList.java,1684
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class RefList {RefList56,2016
+    protected Fontfaces fontfaces;fontfaces59,2073
+    protected BorderFills borderFills;borderFills61,2141
+    protected CharProperties charProperties;charProperties63,2213
+    protected TabProperties tabProperties;tabProperties65,2291
+    protected Numberings numberings;numberings67,2367
+    protected Bullets bullets;bullets69,2437
+    protected ParaProperties paraProperties;paraProperties71,2501
+    protected Styles styles;styles73,2579
+    public Fontfaces getFontfaces() {getFontfaces83,2769
+    public void setFontfaces(Fontfaces value) {setFontfaces95,3004
+    public BorderFills getBorderFills() {getBorderFills107,3255
+    public void setBorderFills(BorderFills value) {setBorderFills119,3500
+    public CharProperties getCharProperties() {getCharProperties131,3763
+    public void setCharProperties(CharProperties value) {setCharProperties143,4023
+    public TabProperties getTabProperties() {getTabProperties155,4293
+    public void setTabProperties(TabProperties value) {setTabProperties167,4548
+    public Numberings getNumberings() {getNumberings179,4809
+    public void setNumberings(Numberings value) {setNumberings191,5049
+    public Bullets getBullets() {getBullets203,5295
+    public void setBullets(Bullets value) {setBullets215,5520
+    public ParaProperties getParaProperties() {getParaProperties227,5771
+    public void setParaProperties(ParaProperties value) {setParaProperties239,6031
+    public Styles getStyles() {getStyles251,6287
+    public void setStyles(Styles value) {setStyles263,6507
+
+kr/co/hancom/hwpml/_2011/head/RelSz.java,1265
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class RelSz {RelSz45,1882
+    protected BigInteger hangul;hangul48,1956
+    protected BigInteger hanja;hanja50,2040
+    protected BigInteger japanese;japanese52,2126
+    protected BigInteger latin;latin54,2212
+    protected BigInteger other;other56,2295
+    protected BigInteger symbol;symbol58,2379
+    protected BigInteger user;user60,2462
+    public BigInteger getHangul() {getHangul70,2652
+    public void setHangul(BigInteger value) {setHangul82,2880
+    public BigInteger getHanja() {getHanja94,3119
+    public void setHanja(BigInteger value) {setHanja106,3344
+    public BigInteger getJapanese() {getJapanese118,3584
+    public void setJapanese(BigInteger value) {setJapanese130,3818
+    public BigInteger getLatin() {getLatin142,4061
+    public void setLatin(BigInteger value) {setLatin154,4286
+    public BigInteger getOther() {getOther166,4523
+    public void setOther(BigInteger value) {setOther178,4748
+    public BigInteger getSymbol() {getSymbol190,4986
+    public void setSymbol(BigInteger value) {setSymbol202,5214
+    public BigInteger getUser() {getUser214,5452
+    public void setUser(BigInteger value) {setUser226,5674
+
+kr/co/hancom/hwpml/_2011/head/RightBorder.java,563
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class RightBorder {RightBorder43,1617
+    protected String color;color47,1739
+    protected String type;type51,1907
+    protected String width;width54,2028
+    public String getColor() {getColor64,2210
+    public void setColor(String value) {setColor76,2427
+    public String getType() {getType88,2655
+    public void setType(String value) {setType100,2869
+    public String getWidth() {getWidth112,3096
+    public void setWidth(String value) {setWidth124,3313
+
+kr/co/hancom/hwpml/_2011/head/Shadow.java,751
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Shadow {Shadow45,1745
+    protected String color;color49,1862
+    protected BigInteger offsetX;offsetX51,1943
+    protected BigInteger offsetY;offsetY53,2030
+    protected String type;type57,2204
+    public String getColor() {getColor67,2385
+    public void setColor(String value) {setColor79,2602
+    public BigInteger getOffsetX() {getOffsetX91,2837
+    public void setOffsetX(BigInteger value) {setOffsetX103,3068
+    public BigInteger getOffsetY() {getOffsetY115,3311
+    public void setOffsetY(BigInteger value) {setOffsetY127,3542
+    public String getType() {getType139,3778
+    public void setType(String value) {setType151,3992
+
+kr/co/hancom/hwpml/_2011/head/Slash.java,610
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Slash {Slash44,1634
+    protected BigInteger crooked;crooked47,1709
+    protected BigInteger isCounter;isCounter49,1798
+    protected String type;type53,1974
+    public BigInteger getCrooked() {getCrooked63,2161
+    public void setCrooked(BigInteger value) {setCrooked75,2392
+    public BigInteger getIsCounter() {getIsCounter87,2637
+    public void setIsCounter(BigInteger value) {setIsCounter99,2874
+    public String getType() {getType111,3114
+    public void setType(String value) {setType123,3328
+
+kr/co/hancom/hwpml/_2011/head/Spacing.java,1269
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Spacing {Spacing45,1884
+    protected BigInteger hangul;hangul48,1960
+    protected BigInteger hanja;hanja50,2044
+    protected BigInteger japanese;japanese52,2130
+    protected BigInteger latin;latin54,2216
+    protected BigInteger other;other56,2299
+    protected BigInteger symbol;symbol58,2383
+    protected BigInteger user;user60,2466
+    public BigInteger getHangul() {getHangul70,2656
+    public void setHangul(BigInteger value) {setHangul82,2884
+    public BigInteger getHanja() {getHanja94,3123
+    public void setHanja(BigInteger value) {setHanja106,3348
+    public BigInteger getJapanese() {getJapanese118,3588
+    public void setJapanese(BigInteger value) {setJapanese130,3822
+    public BigInteger getLatin() {getLatin142,4065
+    public void setLatin(BigInteger value) {setLatin154,4290
+    public BigInteger getOther() {getOther166,4527
+    public void setOther(BigInteger value) {setOther178,4752
+    public BigInteger getSymbol() {getSymbol190,4990
+    public void setSymbol(BigInteger value) {setSymbol202,5218
+    public BigInteger getUser() {getUser214,5456
+    public void setUser(BigInteger value) {setUser226,5678
+
+kr/co/hancom/hwpml/_2011/head/Style.java,1662
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Style {Style50,2299
+    protected BigInteger charPrIDRef;charPrIDRef53,2378
+    protected String engName;engName56,2512
+    protected BigInteger id;id58,2590
+    protected BigInteger langID;langID60,2671
+    protected BigInteger lockForm;lockForm62,2758
+    protected String name;name65,2886
+    protected BigInteger nextStyleIDRef;nextStyleIDRef67,2973
+    protected BigInteger paraPrIDRef;paraPrIDRef69,3071
+    protected String type;type73,3249
+    public BigInteger getCharPrIDRef() {getCharPrIDRef83,3440
+    public void setCharPrIDRef(BigInteger value) {setCharPrIDRef95,3683
+    public String getEngName() {getEngName107,3930
+    public void setEngName(String value) {setEngName119,4153
+    public BigInteger getId() {getId131,4387
+    public void setId(BigInteger value) {setId143,4603
+    public BigInteger getLangID() {getLangID155,4835
+    public void setLangID(BigInteger value) {setLangID167,5063
+    public BigInteger getLockForm() {getLockForm179,5305
+    public void setLockForm(BigInteger value) {setLockForm191,5539
+    public String getName() {getName203,5777
+    public void setName(String value) {setName215,5991
+    public BigInteger getNextStyleIDRef() {getNextStyleIDRef227,6231
+    public void setNextStyleIDRef(BigInteger value) {setNextStyleIDRef239,6483
+    public BigInteger getParaPrIDRef() {getParaPrIDRef251,6744
+    public void setParaPrIDRef(BigInteger value) {setParaPrIDRef263,6987
+    public String getType() {getType275,7231
+    public void setType(String value) {setType287,7445
+
+kr/co/hancom/hwpml/_2011/head/Styles.java,385
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Styles {Styles47,1526
+    protected List<Style> style;style50,1582
+    protected BigInteger itemCnt;itemCnt52,1668
+    public List<Style> getStyle() {getStyle76,2322
+    public BigInteger getItemCnt() {getItemCnt91,2634
+    public void setItemCnt(BigInteger value) {setItemCnt103,2865
+
+kr/co/hancom/hwpml/_2011/head/SubstFont.java,805
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class SubstFont {SubstFont45,1764
+    protected String binaryItemIDRef;binaryItemIDRef49,1894
+    protected String face;face52,2025
+    protected BigInteger isEmbedded;isEmbedded54,2108
+    protected String type;type58,2285
+    public String getBinaryItemIDRef() {getBinaryItemIDRef68,2476
+    public void setBinaryItemIDRef(String value) {setBinaryItemIDRef80,2723
+    public String getFace() {getFace92,2971
+    public void setFace(String value) {setFace104,3185
+    public BigInteger getIsEmbedded() {getIsEmbedded116,3421
+    public void setIsEmbedded(BigInteger value) {setIsEmbedded128,3661
+    public String getType() {getType140,3903
+    public void setType(String value) {setType152,4117
+
+kr/co/hancom/hwpml/_2011/head/TabItem.java,561
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class TabItem {TabItem44,1628
+    protected String leader;leader49,1794
+    protected BigInteger pos;pos51,1872
+    protected String type;type55,2042
+    public String getLeader() {getLeader65,2224
+    public void setLeader(String value) {setLeader77,2444
+    public BigInteger getPos() {getPos89,2677
+    public void setPos(BigInteger value) {setPos101,2896
+    public String getType() {getType113,3124
+    public void setType(String value) {setType125,3338
+
+kr/co/hancom/hwpml/_2011/head/TabPr.java,767
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class TabPr {TabPr48,1718
+    protected List<TabItem> tabItem;tabItem50,1740
+    protected BigInteger autoTabLeft;autoTabLeft52,1834
+    protected BigInteger autoTabRight;autoTabRight54,1930
+    protected BigInteger id;id56,2017
+    public List<TabItem> getTabItem() {getTabItem80,2674
+    public BigInteger getAutoTabLeft() {getAutoTabLeft95,3002
+    public void setAutoTabLeft(BigInteger value) {setAutoTabLeft107,3245
+    public BigInteger getAutoTabRight() {getAutoTabRight119,3501
+    public void setAutoTabRight(BigInteger value) {setAutoTabRight131,3747
+    public BigInteger getId() {getId143,3995
+    public void setId(BigInteger value) {setId155,4211
+
+kr/co/hancom/hwpml/_2011/head/TabProperties.java,399
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class TabProperties {TabProperties47,1533
+    protected List<TabPr> tabPr;tabPr50,1596
+    protected BigInteger itemCnt;itemCnt52,1682
+    public List<TabPr> getTabPr() {getTabPr76,2336
+    public BigInteger getItemCnt() {getItemCnt91,2648
+    public void setItemCnt(BigInteger value) {setItemCnt103,2879
+
+kr/co/hancom/hwpml/_2011/head/TopBorder.java,559
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class TopBorder {TopBorder43,1615
+    protected String color;color47,1735
+    protected String type;type51,1903
+    protected String width;width54,2024
+    public String getColor() {getColor64,2206
+    public void setColor(String value) {setColor76,2423
+    public String getType() {getType88,2651
+    public void setType(String value) {setType100,2865
+    public String getWidth() {getWidth112,3092
+    public void setWidth(String value) {setWidth124,3309
+
+kr/co/hancom/hwpml/_2011/head/TrackchageConfig.java,292
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class TrackchageConfig {TrackchageConfig39,1253
+    protected BigInteger flags;flags42,1337
+    public BigInteger getFlags() {getFlags52,1527
+    public void setFlags(BigInteger value) {setFlags64,1752
+
+kr/co/hancom/hwpml/_2011/head/TypeInfo.java,1776
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class TypeInfo {TypeInfo50,2304
+    protected BigInteger armStyle;armStyle53,2383
+    protected BigInteger contrast;contrast55,2472
+    protected String familyType;familyType59,2653
+    protected BigInteger letterform;letterform61,2742
+    protected BigInteger midline;midline63,2832
+    protected BigInteger proportion;proportion65,2922
+    protected BigInteger strokeVariation;strokeVariation67,3020
+    protected BigInteger weight;weight69,3114
+    protected BigInteger xHeight;xHeight71,3200
+    public BigInteger getArmStyle() {getArmStyle81,3395
+    public void setArmStyle(BigInteger value) {setArmStyle93,3629
+    public BigInteger getContrast() {getContrast105,3875
+    public void setContrast(BigInteger value) {setContrast117,4109
+    public String getFamilyType() {getFamilyType129,4353
+    public void setFamilyType(String value) {setFamilyType141,4585
+    public BigInteger getLetterform() {getLetterform153,4833
+    public void setLetterform(BigInteger value) {setLetterform165,5073
+    public BigInteger getMidline() {getMidline177,5322
+    public void setMidline(BigInteger value) {setMidline189,5553
+    public BigInteger getProportion() {getProportion201,5799
+    public void setProportion(BigInteger value) {setProportion213,6039
+    public BigInteger getStrokeVariation() {getStrokeVariation225,6296
+    public void setStrokeVariation(BigInteger value) {setStrokeVariation237,6551
+    public BigInteger getWeight() {getWeight249,6809
+    public void setWeight(BigInteger value) {setWeight261,7037
+    public BigInteger getXHeight() {getXHeight273,7278
+    public void setXHeight(BigInteger value) {setXHeight285,7509
+
+kr/co/hancom/hwpml/_2011/head/Underline.java,559
+package kr.co.hancom.hwpml._2011.head;kr.co.hancom.hwpml._2011.head9,347
+public class Underline {Underline43,1608
+    protected String color;color47,1728
+    protected String shape;shape51,1897
+    protected String type;type55,2065
+    public String getColor() {getColor65,2246
+    public void setColor(String value) {setColor77,2463
+    public String getShape() {getShape89,2692
+    public void setShape(String value) {setShape101,2909
+    public String getType() {getType113,3137
+    public void setType(String value) {setType125,3351
+
+kr/co/hancom/hwpml/_2011/paragraph/AutoNumFormat.java,991
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class AutoNumFormat {AutoNumFormat46,1888
+    protected String prefixChar;prefixChar50,2017
+    protected String suffixChar;suffixChar53,2149
+    protected BigInteger supscript;supscript55,2237
+    protected String type;type59,2413
+    protected String userChar;userChar62,2537
+    public String getPrefixChar() {getPrefixChar72,2727
+    public void setPrefixChar(String value) {setPrefixChar84,2959
+    public String getSuffixChar() {getSuffixChar96,3203
+    public void setSuffixChar(String value) {setSuffixChar108,3435
+    public BigInteger getSupscript() {getSupscript120,3682
+    public void setSupscript(BigInteger value) {setSupscript132,3919
+    public String getType() {getType144,4159
+    public void setType(String value) {setType156,4373
+    public String getUserChar() {getUserChar168,4603
+    public void setUserChar(String value) {setUserChar180,4829
+
+kr/co/hancom/hwpml/_2011/paragraph/Caption.java,1097
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class Caption {Caption52,2067
+    protected SubList subList;subList55,2124
+    protected BigInteger fullSz;fullSz57,2207
+    protected BigInteger gap;gap59,2289
+    protected BigInteger lastWidth;lastWidth61,2374
+    protected String side;side65,2550
+    protected BigInteger width;width67,2628
+    public SubList getSubList() {getSubList77,2817
+    public void setSubList(SubList value) {setSubList89,3042
+    public BigInteger getFullSz() {getFullSz101,3281
+    public void setFullSz(BigInteger value) {setFullSz113,3509
+    public BigInteger getGap() {getGap125,3746
+    public void setGap(BigInteger value) {setGap137,3965
+    public BigInteger getLastWidth() {getLastWidth149,4202
+    public void setLastWidth(BigInteger value) {setLastWidth161,4439
+    public String getSide() {getSide173,4679
+    public void setSide(String value) {setSide185,4893
+    public BigInteger getWidth() {getWidth197,5124
+    public void setWidth(BigInteger value) {setWidth209,5349
+
+kr/co/hancom/hwpml/_2011/paragraph/Case.java,501
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class Case {Case46,1535
+    protected Heading heading;heading49,1644
+    protected String requiredNamespace;requiredNamespace52,1835
+    public Heading getHeading() {getHeading62,2032
+    public void setHeading(Heading value) {setHeading74,2257
+    public String getRequiredNamespace() {getRequiredNamespace86,2503
+    public void setRequiredNamespace(String value) {setRequiredNamespace98,2756
+
+kr/co/hancom/hwpml/_2011/paragraph/CellAddr.java,470
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class CellAddr {CellAddr40,1360
+    protected BigInteger colAddr;colAddr43,1438
+    protected BigInteger rowAddr;rowAddr45,1525
+    public BigInteger getColAddr() {getColAddr55,1719
+    public void setColAddr(BigInteger value) {setColAddr67,1950
+    public BigInteger getRowAddr() {getRowAddr79,2193
+    public void setRowAddr(BigInteger value) {setRowAddr91,2424
+
+kr/co/hancom/hwpml/_2011/paragraph/CellMargin.java,762
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class CellMargin {CellMargin42,1568
+    protected BigInteger bottom;bottom45,1647
+    protected BigInteger left;left47,1730
+    protected BigInteger right;right49,1812
+    protected BigInteger top;top51,1893
+    public BigInteger getBottom() {getBottom61,2082
+    public void setBottom(BigInteger value) {setBottom73,2310
+    public BigInteger getLeft() {getLeft85,2548
+    public void setLeft(BigInteger value) {setLeft97,2770
+    public BigInteger getRight() {getRight109,3005
+    public void setRight(BigInteger value) {setRight121,3230
+    public BigInteger getTop() {getTop133,3465
+    public void setTop(BigInteger value) {setTop145,3684
+
+kr/co/hancom/hwpml/_2011/paragraph/CellSpan.java,470
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class CellSpan {CellSpan40,1360
+    protected BigInteger colSpan;colSpan43,1438
+    protected BigInteger rowSpan;rowSpan45,1525
+    public BigInteger getColSpan() {getColSpan55,1719
+    public void setColSpan(BigInteger value) {setColSpan67,1950
+    public BigInteger getRowSpan() {getRowSpan79,2193
+    public void setRowSpan(BigInteger value) {setRowSpan91,2424
+
+kr/co/hancom/hwpml/_2011/paragraph/CellSz.java,448
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class CellSz {CellSz40,1355
+    protected BigInteger height;height43,1430
+    protected BigInteger width;width45,1514
+    public BigInteger getHeight() {getHeight55,1705
+    public void setHeight(BigInteger value) {setHeight67,1933
+    public BigInteger getWidth() {getWidth79,2172
+    public void setWidth(BigInteger value) {setWidth91,2397
+
+kr/co/hancom/hwpml/_2011/paragraph/ColPr.java,1071
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class ColPr {ColPr47,1960
+    protected BigInteger colCount;colCount50,2036
+    protected String id;id53,2162
+    protected String layout;layout57,2329
+    protected BigInteger sameGap;sameGap59,2411
+    protected BigInteger sameSz;sameSz61,2497
+    protected String type;type65,2670
+    public BigInteger getColCount() {getColCount75,2858
+    public void setColCount(BigInteger value) {setColCount87,3092
+    public String getId() {getId99,3328
+    public void setId(String value) {setId111,3536
+    public String getLayout() {getLayout123,3760
+    public void setLayout(String value) {setLayout135,3980
+    public BigInteger getSameGap() {getSameGap147,4217
+    public void setSameGap(BigInteger value) {setSameGap159,4448
+    public BigInteger getSameSz() {getSameSz171,4690
+    public void setSameSz(BigInteger value) {setSameSz183,4918
+    public String getType() {getType195,5152
+    public void setType(String value) {setType207,5366
+
+kr/co/hancom/hwpml/_2011/paragraph/Ctrl.java,263
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class Ctrl {Ctrl42,1277
+    protected ColPr colPr;colPr45,1331
+    public ColPr getColPr() {getColPr55,1511
+    public void setColPr(ColPr value) {setColPr67,1726
+
+kr/co/hancom/hwpml/_2011/paragraph/Default.java,287
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class Default {Default43,1325
+    protected Heading heading;heading46,1437
+    public Heading getHeading() {getHeading56,1625
+    public void setHeading(Heading value) {setHeading68,1850
+
+kr/co/hancom/hwpml/_2011/paragraph/EndNotePr.java,1085
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class EndNotePr {EndNotePr50,1728
+    protected AutoNumFormat autoNumFormat;autoNumFormat53,1787
+    protected NoteLine noteLine;noteLine55,1863
+    protected NoteSpacing noteSpacing;noteSpacing57,1929
+    protected Numbering numbering;numbering59,2001
+    protected Placement placement;placement61,2069
+    public AutoNumFormat getAutoNumFormat() {getAutoNumFormat71,2273
+    public void setAutoNumFormat(AutoNumFormat value) {setAutoNumFormat83,2528
+    public NoteLine getNoteLine() {getNoteLine95,2785
+    public void setNoteLine(NoteLine value) {setNoteLine107,3015
+    public NoteSpacing getNoteSpacing() {getNoteSpacing119,3263
+    public void setNoteSpacing(NoteSpacing value) {setNoteSpacing131,3508
+    public Numbering getNumbering() {getNumbering143,3761
+    public void setNumbering(Numbering value) {setNumbering155,3996
+    public Placement getPlacement() {getPlacement167,4243
+    public void setPlacement(Placement value) {setPlacement179,4478
+
+kr/co/hancom/hwpml/_2011/paragraph/FootNotePr.java,1087
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class FootNotePr {FootNotePr50,1729
+    protected AutoNumFormat autoNumFormat;autoNumFormat53,1789
+    protected NoteLine noteLine;noteLine55,1865
+    protected NoteSpacing noteSpacing;noteSpacing57,1931
+    protected Numbering numbering;numbering59,2003
+    protected Placement placement;placement61,2071
+    public AutoNumFormat getAutoNumFormat() {getAutoNumFormat71,2275
+    public void setAutoNumFormat(AutoNumFormat value) {setAutoNumFormat83,2530
+    public NoteLine getNoteLine() {getNoteLine95,2787
+    public void setNoteLine(NoteLine value) {setNoteLine107,3017
+    public NoteSpacing getNoteSpacing() {getNoteSpacing119,3265
+    public void setNoteSpacing(NoteSpacing value) {setNoteSpacing131,3510
+    public Numbering getNumbering() {getNumbering143,3763
+    public void setNumbering(Numbering value) {setNumbering155,3998
+    public Placement getPlacement() {getPlacement167,4245
+    public void setPlacement(Placement value) {setPlacement179,4480
+
+kr/co/hancom/hwpml/_2011/paragraph/FwSpace.java,124
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class FwSpace {FwSpace36,1067
+
+kr/co/hancom/hwpml/_2011/paragraph/Grid.java,690
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class Grid {Grid41,1473
+    protected BigInteger charGrid;charGrid44,1548
+    protected BigInteger lineGrid;lineGrid46,1637
+    protected BigInteger wonggojiFormat;wonggojiFormat48,1732
+    public BigInteger getCharGrid() {getCharGrid58,1934
+    public void setCharGrid(BigInteger value) {setCharGrid70,2168
+    public BigInteger getLineGrid() {getLineGrid82,2414
+    public void setLineGrid(BigInteger value) {setLineGrid94,2648
+    public BigInteger getWonggojiFormat() {getWonggojiFormat106,2900
+    public void setWonggojiFormat(BigInteger value) {setWonggojiFormat118,3152
+
+kr/co/hancom/hwpml/_2011/paragraph/InMargin.java,758
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class InMargin {InMargin42,1566
+    protected BigInteger bottom;bottom45,1643
+    protected BigInteger left;left47,1726
+    protected BigInteger right;right49,1808
+    protected BigInteger top;top51,1889
+    public BigInteger getBottom() {getBottom61,2078
+    public void setBottom(BigInteger value) {setBottom73,2306
+    public BigInteger getLeft() {getLeft85,2544
+    public void setLeft(BigInteger value) {setLeft97,2766
+    public BigInteger getRight() {getRight109,3001
+    public void setRight(BigInteger value) {setRight121,3226
+    public BigInteger getTop() {getTop133,3461
+    public void setTop(BigInteger value) {setTop145,3680
+
+kr/co/hancom/hwpml/_2011/paragraph/LineBreak.java,128
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class LineBreak {LineBreak36,1069
+
+kr/co/hancom/hwpml/_2011/paragraph/LineNumberShape.java,886
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class LineNumberShape {LineNumberShape42,1592
+    protected BigInteger countBy;countBy45,1677
+    protected BigInteger distance;distance47,1765
+    protected BigInteger restartType;restartType49,1857
+    protected BigInteger startNumber;startNumber51,1952
+    public BigInteger getCountBy() {getCountBy61,2150
+    public void setCountBy(BigInteger value) {setCountBy73,2381
+    public BigInteger getDistance() {getDistance85,2625
+    public void setDistance(BigInteger value) {setDistance97,2859
+    public BigInteger getRestartType() {getRestartType109,3108
+    public void setRestartType(BigInteger value) {setRestartType121,3351
+    public BigInteger getStartNumber() {getStartNumber133,3606
+    public void setStartNumber(BigInteger value) {setStartNumber145,3849
+
+kr/co/hancom/hwpml/_2011/paragraph/Lineseg.java,1712
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class Lineseg {Lineseg47,2119
+    protected BigInteger baseline;baseline50,2197
+    protected BigInteger flags;flags52,2283
+    protected BigInteger horzpos;horzpos54,2368
+    protected BigInteger horzsize;horzsize56,2456
+    protected BigInteger spacing;spacing58,2544
+    protected BigInteger textheight;textheight60,2634
+    protected BigInteger textpos;textpos62,2724
+    protected BigInteger vertpos;vertpos64,2811
+    protected BigInteger vertsize;vertsize66,2899
+    public BigInteger getBaseline() {getBaseline76,3095
+    public void setBaseline(BigInteger value) {setBaseline88,3329
+    public BigInteger getFlags() {getFlags100,3572
+    public void setFlags(BigInteger value) {setFlags112,3797
+    public BigInteger getHorzpos() {getHorzpos124,4036
+    public void setHorzpos(BigInteger value) {setHorzpos136,4267
+    public BigInteger getHorzsize() {getHorzsize148,4511
+    public void setHorzsize(BigInteger value) {setHorzsize160,4745
+    public BigInteger getSpacing() {getSpacing172,4990
+    public void setSpacing(BigInteger value) {setSpacing184,5221
+    public BigInteger getTextheight() {getTextheight196,5467
+    public void setTextheight(BigInteger value) {setTextheight208,5707
+    public BigInteger getTextpos() {getTextpos220,5956
+    public void setTextpos(BigInteger value) {setTextpos232,6187
+    public BigInteger getVertpos() {getVertpos244,6430
+    public void setVertpos(BigInteger value) {setVertpos256,6661
+    public BigInteger getVertsize() {getVertsize268,6905
+    public void setVertsize(BigInteger value) {setVertsize280,7139
+
+kr/co/hancom/hwpml/_2011/paragraph/Linesegarray.java,246
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class Linesegarray {Linesegarray44,1362
+    protected List<Lineseg> lineseg;lineseg47,1424
+    public List<Lineseg> getLineseg() {getLineseg71,2089
+
+kr/co/hancom/hwpml/_2011/paragraph/Margin.java,1259
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class Margin {Margin45,1885
+    protected BigInteger bottom;bottom48,1960
+    protected BigInteger footer;footer50,2045
+    protected BigInteger gutter;gutter52,2130
+    protected BigInteger header;header54,2215
+    protected BigInteger left;left56,2298
+    protected BigInteger right;right58,2380
+    protected BigInteger top;top60,2461
+    public BigInteger getBottom() {getBottom70,2650
+    public void setBottom(BigInteger value) {setBottom82,2878
+    public BigInteger getFooter() {getFooter94,3118
+    public void setFooter(BigInteger value) {setFooter106,3346
+    public BigInteger getGutter() {getGutter118,3586
+    public void setGutter(BigInteger value) {setGutter130,3814
+    public BigInteger getHeader() {getHeader142,4054
+    public void setHeader(BigInteger value) {setHeader154,4282
+    public BigInteger getLeft() {getLeft166,4520
+    public void setLeft(BigInteger value) {setLeft178,4742
+    public BigInteger getRight() {getRight190,4977
+    public void setRight(BigInteger value) {setRight202,5202
+    public BigInteger getTop() {getTop214,5437
+    public void setTop(BigInteger value) {setTop226,5656
+
+kr/co/hancom/hwpml/_2011/paragraph/NoteLine.java,735
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class NoteLine {NoteLine45,1755
+    protected String color;color49,1874
+    protected BigInteger length;length51,1954
+    protected String type;type55,2127
+    protected String width;width58,2248
+    public String getColor() {getColor68,2430
+    public void setColor(String value) {setColor80,2647
+    public BigInteger getLength() {getLength92,2881
+    public void setLength(BigInteger value) {setLength104,3109
+    public String getType() {getType116,3343
+    public void setType(String value) {setType128,3557
+    public String getWidth() {getWidth140,3784
+    public void setWidth(String value) {setWidth152,4001
+
+kr/co/hancom/hwpml/_2011/paragraph/NoteSpacing.java,704
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class NoteSpacing {NoteSpacing41,1480
+    protected BigInteger aboveLine;aboveLine44,1563
+    protected BigInteger belowLine;belowLine46,1654
+    protected BigInteger betweenNotes;betweenNotes48,1748
+    public BigInteger getAboveLine() {getAboveLine58,1949
+    public void setAboveLine(BigInteger value) {setAboveLine70,2186
+    public BigInteger getBelowLine() {getBelowLine82,2435
+    public void setBelowLine(BigInteger value) {setBelowLine94,2672
+    public BigInteger getBetweenNotes() {getBetweenNotes106,2924
+    public void setBetweenNotes(BigInteger value) {setBetweenNotes118,3170
+
+kr/co/hancom/hwpml/_2011/paragraph/Numbering.java,436
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class Numbering {Numbering43,1532
+    protected BigInteger newNum;newNum46,1610
+    protected String type;type50,1783
+    public BigInteger getNewNum() {getNewNum60,1969
+    public void setNewNum(BigInteger value) {setNewNum72,2197
+    public String getType() {getType84,2431
+    public void setType(String value) {setType96,2645
+
+kr/co/hancom/hwpml/_2011/paragraph/ObjectFactory.java,2630
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class ObjectFactory {ObjectFactory29,1030
+    public ObjectFactory() {ObjectFactory36,1234
+    public Switch createSwitch() {createSwitch43,1339
+    public Case createCase() {createCase51,1477
+    public Default createDefault() {createDefault59,1612
+    public P createP() {createP67,1748
+    public Run createRun() {createRun75,1870
+    public SecPr createSecPr() {createSecPr83,2000
+    public Grid createGrid() {createGrid91,2135
+    public StartNum createStartNum() {createStartNum99,2271
+    public Visibility createVisibility() {createVisibility107,2421
+    public LineNumberShape createLineNumberShape() {createLineNumberShape115,2582
+    public PagePr createPagePr() {createPagePr123,2749
+    public Margin createMargin() {createMargin131,2889
+    public FootNotePr createFootNotePr() {createFootNotePr139,3033
+    public AutoNumFormat createAutoNumFormat() {createAutoNumFormat147,3192
+    public NoteLine createNoteLine() {createNoteLine155,3355
+    public NoteSpacing createNoteSpacing() {createNoteSpacing163,3506
+    public Numbering createNumbering() {createNumbering171,3664
+    public Placement createPlacement() {createPlacement179,3816
+    public EndNotePr createEndNotePr() {createEndNotePr187,3968
+    public PageBorderFill createPageBorderFill() {createPageBorderFill195,4125
+    public Offset createOffset() {createOffset203,4289
+    public Ctrl createCtrl() {createCtrl211,4427
+    public ColPr createColPr() {createColPr219,4560
+    public T createT() {createT227,4692
+    public FwSpace createFwSpace() {createFwSpace235,4818
+    public LineBreak createLineBreak() {createLineBreak243,4964
+    public Tbl createTbl() {createTbl251,5110
+    public Caption createCaption() {createCaption259,5242
+    public SubList createSubList() {createSubList267,5386
+    public InMargin createInMargin() {createInMargin275,5531
+    public OutMargin createOutMargin() {createOutMargin283,5680
+    public Pos createPos() {createPos291,5826
+    public Sz createSz() {createSz299,5953
+    public Tr createTr() {createTr307,6077
+    public Tc createTc() {createTc315,6201
+    public CellAddr createCellAddr() {createCellAddr323,6331
+    public CellSpan createCellSpan() {createCellSpan331,6479
+    public CellSz createCellSz() {createCellSz339,6625
+    public CellMargin createCellMargin() {createCellMargin347,6769
+    public Linesegarray createLinesegarray() {createLinesegarray355,6927
+    public Lineseg createLineseg() {createLineseg363,7086
+
+kr/co/hancom/hwpml/_2011/paragraph/Offset.java,754
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class Offset {Offset42,1564
+    protected BigInteger bottom;bottom45,1639
+    protected BigInteger left;left47,1722
+    protected BigInteger right;right49,1804
+    protected BigInteger top;top51,1885
+    public BigInteger getBottom() {getBottom61,2074
+    public void setBottom(BigInteger value) {setBottom73,2302
+    public BigInteger getLeft() {getLeft85,2540
+    public void setLeft(BigInteger value) {setLeft97,2762
+    public BigInteger getRight() {getRight109,2997
+    public void setRight(BigInteger value) {setRight121,3222
+    public BigInteger getTop() {getTop133,3457
+    public void setTop(BigInteger value) {setTop145,3676
+
+kr/co/hancom/hwpml/_2011/paragraph/OutMargin.java,760
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class OutMargin {OutMargin42,1567
+    protected BigInteger bottom;bottom45,1645
+    protected BigInteger left;left47,1728
+    protected BigInteger right;right49,1810
+    protected BigInteger top;top51,1891
+    public BigInteger getBottom() {getBottom61,2080
+    public void setBottom(BigInteger value) {setBottom73,2308
+    public BigInteger getLeft() {getLeft85,2546
+    public void setLeft(BigInteger value) {setLeft97,2768
+    public BigInteger getRight() {getRight109,3003
+    public void setRight(BigInteger value) {setRight121,3228
+    public BigInteger getTop() {getTop133,3463
+    public void setTop(BigInteger value) {setTop145,3682
+
+kr/co/hancom/hwpml/_2011/paragraph/P.java,1496
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class P {P54,2201
+    protected List<Run> run;run56,2219
+    protected Linesegarray linesegarray;linesegarray58,2281
+    protected BigInteger columnBreak;columnBreak60,2379
+    protected BigInteger id;id62,2465
+    protected BigInteger merged;merged64,2546
+    protected BigInteger pageBreak;pageBreak66,2634
+    protected BigInteger paraPrIDRef;paraPrIDRef68,2727
+    protected BigInteger styleIDRef;styleIDRef70,2821
+    public List<Run> getRun() {getRun94,3470
+    public Linesegarray getLinesegarray() {getLinesegarray109,3777
+    public void setLinesegarray(Linesegarray value) {setLinesegarray121,4027
+    public BigInteger getColumnBreak() {getColumnBreak133,4286
+    public void setColumnBreak(BigInteger value) {setColumnBreak145,4529
+    public BigInteger getId() {getId157,4775
+    public void setId(BigInteger value) {setId169,4991
+    public BigInteger getMerged() {getMerged181,5223
+    public void setMerged(BigInteger value) {setMerged193,5451
+    public BigInteger getPageBreak() {getPageBreak205,5694
+    public void setPageBreak(BigInteger value) {setPageBreak217,5931
+    public BigInteger getParaPrIDRef() {getParaPrIDRef229,6182
+    public void setParaPrIDRef(BigInteger value) {setParaPrIDRef241,6425
+    public BigInteger getStyleIDRef() {getStyleIDRef253,6679
+    public void setStyleIDRef(BigInteger value) {setStyleIDRef265,6919
+
+kr/co/hancom/hwpml/_2011/paragraph/package-info.java,85
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,511
+
+kr/co/hancom/hwpml/_2011/paragraph/PageBorderFill.java,1414
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class PageBorderFill {PageBorderFill53,2205
+    protected Offset offset;offset56,2269
+    protected BigInteger borderFillIDRef;borderFillIDRef58,2359
+    protected String fillArea;fillArea62,2545
+    protected BigInteger footerInside;footerInside64,2634
+    protected BigInteger headerInside;headerInside66,2731
+    protected String textBorder;textBorder70,2916
+    protected String type;type74,3089
+    public Offset getOffset() {getOffset84,3271
+    public void setOffset(Offset value) {setOffset96,3491
+    public BigInteger getBorderFillIDRef() {getBorderFillIDRef108,3736
+    public void setBorderFillIDRef(BigInteger value) {setBorderFillIDRef120,3991
+    public String getFillArea() {getFillArea132,4247
+    public void setFillArea(String value) {setFillArea144,4473
+    public BigInteger getFooterInside() {getFooterInside156,4719
+    public void setFooterInside(BigInteger value) {setFooterInside168,4965
+    public BigInteger getHeaderInside() {getHeaderInside180,5223
+    public void setHeaderInside(BigInteger value) {setHeaderInside192,5469
+    public String getTextBorder() {getTextBorder204,5721
+    public void setTextBorder(String value) {setTextBorder216,5953
+    public String getType() {getType228,6191
+    public void setType(String value) {setType240,6405
+
+kr/co/hancom/hwpml/_2011/paragraph/PagePr.java,960
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class PagePr {PagePr51,1965
+    protected Margin margin;margin54,2021
+    protected String gutterType;gutterType58,2196
+    protected BigInteger height;height60,2281
+    protected String landscape;landscape64,2459
+    protected BigInteger width;width66,2542
+    public Margin getMargin() {getMargin76,2729
+    public void setMargin(Margin value) {setMargin88,2949
+    public String getGutterType() {getGutterType100,3185
+    public void setGutterType(String value) {setGutterType112,3417
+    public BigInteger getHeight() {getHeight124,3661
+    public void setHeight(BigInteger value) {setHeight136,3889
+    public String getLandscape() {getLandscape148,4128
+    public void setLandscape(String value) {setLandscape160,4357
+    public BigInteger getWidth() {getWidth172,4598
+    public void setWidth(BigInteger value) {setWidth184,4823
+
+kr/co/hancom/hwpml/_2011/paragraph/Placement.java,472
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class Placement {Placement43,1538
+    protected BigInteger beneathText;beneathText46,1621
+    protected String place;place50,1800
+    public BigInteger getBeneathText() {getBeneathText60,1992
+    public void setBeneathText(BigInteger value) {setBeneathText72,2235
+    public String getPlace() {getPlace84,2480
+    public void setPlace(String value) {setPlace96,2697
+
+kr/co/hancom/hwpml/_2011/paragraph/Pos.java,2239
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class Pos {Pos52,2542
+    protected BigInteger affectLSpacing;affectLSpacing55,2622
+    protected BigInteger allowOverlap;allowOverlap57,2721
+    protected BigInteger flowWithText;flowWithText59,2818
+    protected BigInteger holdAnchorAndSO;holdAnchorAndSO61,2918
+    protected String horzAlign;horzAlign65,3105
+    protected BigInteger horzOffset;horzOffset67,3193
+    protected String horzRelTo;horzRelTo71,3375
+    protected BigInteger treatAsChar;treatAsChar73,3464
+    protected String vertAlign;vertAlign77,3647
+    protected BigInteger vertOffset;vertOffset79,3735
+    protected String vertRelTo;vertRelTo83,3917
+    public BigInteger getAffectLSpacing() {getAffectLSpacing93,4116
+    public void setAffectLSpacing(BigInteger value) {setAffectLSpacing105,4368
+    public BigInteger getAllowOverlap() {getAllowOverlap117,4630
+    public void setAllowOverlap(BigInteger value) {setAllowOverlap129,4876
+    public BigInteger getFlowWithText() {getFlowWithText141,5134
+    public void setFlowWithText(BigInteger value) {setFlowWithText153,5380
+    public BigInteger getHoldAnchorAndSO() {getHoldAnchorAndSO165,5641
+    public void setHoldAnchorAndSO(BigInteger value) {setHoldAnchorAndSO177,5896
+    public String getHorzAlign() {getHorzAlign189,6153
+    public void setHorzAlign(String value) {setHorzAlign201,6382
+    public BigInteger getHorzOffset() {getHorzOffset213,6628
+    public void setHorzOffset(BigInteger value) {setHorzOffset225,6868
+    public String getHorzRelTo() {getHorzRelTo237,7115
+    public void setHorzRelTo(String value) {setHorzRelTo249,7344
+    public BigInteger getTreatAsChar() {getTreatAsChar261,7591
+    public void setTreatAsChar(BigInteger value) {setTreatAsChar273,7834
+    public String getVertAlign() {getVertAlign285,8083
+    public void setVertAlign(String value) {setVertAlign297,8312
+    public BigInteger getVertOffset() {getVertOffset309,8558
+    public void setVertOffset(BigInteger value) {setVertOffset321,8798
+    public String getVertRelTo() {getVertRelTo333,9045
+    public void setVertRelTo(String value) {setVertRelTo345,9274
+
+kr/co/hancom/hwpml/_2011/paragraph/Run.java,704
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class Run {Run57,1988
+    protected SecPr secPr;secPr59,2008
+    protected Ctrl ctrl;ctrl60,2035
+    protected List<Object> tOrTbl;tOrTbl65,2187
+    protected BigInteger charPrIDRef;charPrIDRef67,2279
+    public SecPr getSecPr() {getSecPr77,2470
+    public void setSecPr(SecPr value) {setSecPr89,2685
+    public Ctrl getCtrl() {getCtrl101,2910
+    public void setCtrl(Ctrl value) {setCtrl113,3120
+    public List<Object> getTOrTbl() {getTOrTbl140,3830
+    public BigInteger getCharPrIDRef() {getCharPrIDRef155,4152
+    public void setCharPrIDRef(BigInteger value) {setCharPrIDRef167,4395
+
+kr/co/hancom/hwpml/_2011/paragraph/SecPr.java,3188
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class SecPr {SecPr71,3280
+    protected Grid grid;grid74,3335
+    protected StartNum startNum;startNum76,3393
+    protected Visibility visibility;visibility78,3459
+    protected LineNumberShape lineNumberShape;lineNumberShape80,3529
+    protected PagePr pagePr;pagePr82,3609
+    protected FootNotePr footNotePr;footNotePr84,3671
+    protected EndNotePr endNotePr;endNotePr86,3741
+    protected List<PageBorderFill> pageBorderFill;pageBorderFill88,3809
+    protected String id;id91,3951
+    protected BigInteger masterPageCnt;masterPageCnt93,4035
+    protected BigInteger memoShapeIDRef;memoShapeIDRef95,4135
+    protected BigInteger outlineShapeIDRef;outlineShapeIDRef97,4239
+    protected BigInteger spaceColumns;spaceColumns99,4341
+    protected BigInteger tabStop;tabStop101,4433
+    protected String textDirection;textDirection105,4616
+    protected BigInteger textVerticalWidthHead;textVerticalWidthHead107,4719
+    public Grid getGrid() {getGrid117,4918
+    public void setGrid(Grid value) {setGrid129,5128
+    public StartNum getStartNum() {getStartNum141,5358
+    public void setStartNum(StartNum value) {setStartNum153,5588
+    public Visibility getVisibility() {getVisibility165,5834
+    public void setVisibility(Visibility value) {setVisibility177,6074
+    public LineNumberShape getLineNumberShape() {getLineNumberShape189,6336
+    public void setLineNumberShape(LineNumberShape value) {setLineNumberShape201,6601
+    public PagePr getPagePr() {getPagePr213,6860
+    public void setPagePr(PagePr value) {setPagePr225,7080
+    public FootNotePr getFootNotePr() {getFootNotePr237,7320
+    public void setFootNotePr(FootNotePr value) {setFootNotePr249,7560
+    public EndNotePr getEndNotePr() {getEndNotePr261,7810
+    public void setEndNotePr(EndNotePr value) {setEndNotePr273,8045
+    public List<PageBorderFill> getPageBorderFill() {getPageBorderFill299,8787
+    public String getId() {getId314,9144
+    public void setId(String value) {setId326,9352
+    public BigInteger getMasterPageCnt() {getMasterPageCnt338,9587
+    public void setMasterPageCnt(BigInteger value) {setMasterPageCnt350,9836
+    public BigInteger getMemoShapeIDRef() {getMemoShapeIDRef362,10098
+    public void setMemoShapeIDRef(BigInteger value) {setMemoShapeIDRef374,10350
+    public BigInteger getOutlineShapeIDRef() {getOutlineShapeIDRef386,10617
+    public void setOutlineShapeIDRef(BigInteger value) {setOutlineShapeIDRef398,10878
+    public BigInteger getSpaceColumns() {getSpaceColumns410,11146
+    public void setSpaceColumns(BigInteger value) {setSpaceColumns422,11392
+    public BigInteger getTabStop() {getTabStop434,11645
+    public void setTabStop(BigInteger value) {setTabStop446,11876
+    public String getTextDirection() {getTextDirection458,12121
+    public void setTextDirection(String value) {setTextDirection470,12362
+    public BigInteger getTextVerticalWidthHead() {getTextVerticalWidthHead482,12627
+    public void setTextVerticalWidthHead(BigInteger value) {setTextVerticalWidthHead494,12900
+
+kr/co/hancom/hwpml/_2011/paragraph/StartNum.java,951
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class StartNum {StartNum46,1854
+    protected BigInteger equation;equation49,1933
+    protected BigInteger page;page51,2018
+    protected String pageStartsOn;pageStartsOn55,2197
+    protected BigInteger pic;pic57,2281
+    protected BigInteger tbl;tbl59,2360
+    public BigInteger getEquation() {getEquation69,2551
+    public void setEquation(BigInteger value) {setEquation81,2785
+    public BigInteger getPage() {getPage93,3027
+    public void setPage(BigInteger value) {setPage105,3249
+    public String getPageStartsOn() {getPageStartsOn117,3487
+    public void setPageStartsOn(String value) {setPageStartsOn129,3725
+    public BigInteger getPic() {getPic141,3970
+    public void setPic(BigInteger value) {setPic153,4189
+    public BigInteger getTbl() {getTbl165,4420
+    public void setTbl(BigInteger value) {setTbl177,4639
+
+kr/co/hancom/hwpml/_2011/paragraph/SubList.java,2073
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class SubList {SubList58,2679
+    protected List<P> p;p60,2703
+    protected BigInteger hasNumRef;hasNumRef62,2783
+    protected BigInteger hasTextRef;hasTextRef64,2875
+    protected String id;id67,3003
+    protected String lineWrap;lineWrap71,3172
+    protected BigInteger linkListIDRef;linkListIDRef73,3262
+    protected BigInteger linkListNextIDRef;linkListNextIDRef75,3365
+    protected String textDirection;textDirection79,3558
+    protected BigInteger textHeight;textHeight81,3650
+    protected BigInteger textWidth;textWidth83,3742
+    protected String vertAlign;vertAlign87,3923
+    public List<P> getP() {getP111,4559
+    public BigInteger getHasNumRef() {getHasNumRef126,4849
+    public void setHasNumRef(BigInteger value) {setHasNumRef138,5086
+    public BigInteger getHasTextRef() {getHasTextRef150,5336
+    public void setHasTextRef(BigInteger value) {setHasTextRef162,5576
+    public String getId() {getId174,5816
+    public void setId(String value) {setId186,6024
+    public String getLineWrap() {getLineWrap198,6250
+    public void setLineWrap(String value) {setLineWrap210,6476
+    public BigInteger getLinkListIDRef() {getLinkListIDRef222,6723
+    public void setLinkListIDRef(BigInteger value) {setLinkListIDRef234,6972
+    public BigInteger getLinkListNextIDRef() {getLinkListNextIDRef246,7237
+    public void setLinkListNextIDRef(BigInteger value) {setLinkListNextIDRef258,7498
+    public String getTextDirection() {getTextDirection270,7763
+    public void setTextDirection(String value) {setTextDirection282,8004
+    public BigInteger getTextHeight() {getTextHeight294,8258
+    public void setTextHeight(BigInteger value) {setTextHeight306,8498
+    public BigInteger getTextWidth() {getTextWidth318,8749
+    public void setTextWidth(BigInteger value) {setTextWidth330,8986
+    public String getVertAlign() {getVertAlign342,9231
+    public void setVertAlign(String value) {setVertAlign354,9460
+
+kr/co/hancom/hwpml/_2011/paragraph/Switch.java,425
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class Switch {Switch44,1382
+    protected Case _case;_case47,1453
+    protected Default _default;_default49,1530
+    public Case getCase() {getCase59,1713
+    public void setCase(Case value) {setCase71,1924
+    public Default getDefault() {getDefault83,2153
+    public void setDefault(Default value) {setDefault95,2379
+
+kr/co/hancom/hwpml/_2011/paragraph/Sz.java,981
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class Sz {Sz46,1856
+    protected BigInteger height;height49,1927
+    protected String heightRelTo;heightRelTo53,2107
+    protected BigInteger protect;protect55,2194
+    protected BigInteger width;width57,2279
+    protected String widthRelTo;widthRelTo61,2457
+    public BigInteger getHeight() {getHeight71,2649
+    public void setHeight(BigInteger value) {setHeight83,2877
+    public String getHeightRelTo() {getHeightRelTo95,3118
+    public void setHeightRelTo(String value) {setHeightRelTo107,3353
+    public BigInteger getProtect() {getProtect119,3600
+    public void setProtect(BigInteger value) {setProtect131,3831
+    public BigInteger getWidth() {getWidth143,4072
+    public void setWidth(BigInteger value) {setWidth155,4297
+    public String getWidthRelTo() {getWidthRelTo167,4535
+    public void setWidthRelTo(String value) {setWidthRelTo179,4767
+
+kr/co/hancom/hwpml/_2011/paragraph/T.java,222
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class T {T47,1546
+    protected List<Object> content;content54,1894
+    public List<Object> getContent() {getContent80,2607
+
+kr/co/hancom/hwpml/_2011/paragraph/Tbl.java,2840
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class Tbl {Tbl69,3640
+    protected List<Object> captionOrInMarginOrOutMargin;captionOrInMarginOrOutMargin79,4029
+    protected BigInteger borderFillIDRef;borderFillIDRef81,4147
+    protected BigInteger cellSpacing;cellSpacing83,4246
+    protected BigInteger colCnt;colCnt85,4336
+    protected String dropcapstyle;dropcapstyle89,4517
+    protected BigInteger id;id91,4600
+    protected BigInteger lock;lock93,4679
+    protected BigInteger noAdjust;noAdjust95,4764
+    protected String numberingType;numberingType99,4948
+    protected String pageBreak;pageBreak103,5129
+    protected BigInteger repeatHeader;repeatHeader105,5219
+    protected BigInteger rowCnt;rowCnt107,5310
+    protected String textFlow;textFlow111,5487
+    protected String textWrap;textWrap115,5662
+    protected BigInteger zOrder;zOrder117,5745
+    public List<Object> getCaptionOrInMarginOrOutMargin() {getCaptionOrInMarginOrOutMargin146,6578
+    public BigInteger getBorderFillIDRef() {getBorderFillIDRef161,6992
+    public void setBorderFillIDRef(BigInteger value) {setBorderFillIDRef173,7247
+    public BigInteger getCellSpacing() {getCellSpacing185,7510
+    public void setCellSpacing(BigInteger value) {setCellSpacing197,7753
+    public BigInteger getColCnt() {getColCnt209,8003
+    public void setColCnt(BigInteger value) {setColCnt221,8231
+    public String getDropcapstyle() {getDropcapstyle233,8473
+    public void setDropcapstyle(String value) {setDropcapstyle245,8711
+    public BigInteger getId() {getId257,8955
+    public void setId(BigInteger value) {setId269,9171
+    public BigInteger getLock() {getLock281,9401
+    public void setLock(BigInteger value) {setLock293,9623
+    public BigInteger getNoAdjust() {getNoAdjust305,9861
+    public void setNoAdjust(BigInteger value) {setNoAdjust317,10095
+    public String getNumberingType() {getNumberingType329,10342
+    public void setNumberingType(String value) {setNumberingType341,10583
+    public String getPageBreak() {getPageBreak353,10832
+    public void setPageBreak(String value) {setPageBreak365,11061
+    public BigInteger getRepeatHeader() {getRepeatHeader377,11309
+    public void setRepeatHeader(BigInteger value) {setRepeatHeader389,11555
+    public BigInteger getRowCnt() {getRowCnt401,11807
+    public void setRowCnt(BigInteger value) {setRowCnt413,12035
+    public String getTextFlow() {getTextFlow425,12273
+    public void setTextFlow(String value) {setTextFlow437,12499
+    public String getTextWrap() {getTextWrap449,12737
+    public void setTextWrap(String value) {setTextWrap461,12963
+    public BigInteger getZOrder() {getZOrder473,13203
+    public void setZOrder(BigInteger value) {setZOrder485,13431
+
+kr/co/hancom/hwpml/_2011/paragraph/Tc.java,2159
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class Tc {Tc62,2677
+    protected List<SubList> subList;subList64,2696
+    protected CellAddr cellAddr;cellAddr66,2766
+    protected CellSpan cellSpan;cellSpan68,2832
+    protected CellSz cellSz;cellSz70,2898
+    protected CellMargin cellMargin;cellMargin72,2960
+    protected BigInteger borderFillIDRef;borderFillIDRef74,3058
+    protected BigInteger dirty;dirty76,3151
+    protected BigInteger editable;editable78,3237
+    protected BigInteger hasMargin;hasMargin80,3327
+    protected BigInteger header;header82,3415
+    protected String name;name85,3541
+    protected BigInteger protect;protect87,3621
+    public List<SubList> getSubList() {getSubList111,4283
+    public CellAddr getCellAddr() {getCellAddr126,4606
+    public void setCellAddr(CellAddr value) {setCellAddr138,4836
+    public CellSpan getCellSpan() {getCellSpan150,5078
+    public void setCellSpan(CellSpan value) {setCellSpan162,5308
+    public CellSz getCellSz() {getCellSz174,5546
+    public void setCellSz(CellSz value) {setCellSz186,5766
+    public CellMargin getCellMargin() {getCellMargin198,6006
+    public void setCellMargin(CellMargin value) {setCellMargin210,6246
+    public BigInteger getBorderFillIDRef() {getBorderFillIDRef222,6503
+    public void setBorderFillIDRef(BigInteger value) {setBorderFillIDRef234,6758
+    public BigInteger getDirty() {getDirty246,7015
+    public void setDirty(BigInteger value) {setDirty258,7240
+    public BigInteger getEditable() {getEditable270,7480
+    public void setEditable(BigInteger value) {setEditable282,7714
+    public BigInteger getHasMargin() {getHasMargin294,7961
+    public void setHasMargin(BigInteger value) {setHasMargin306,8198
+    public BigInteger getHeader() {getHeader318,8444
+    public void setHeader(BigInteger value) {setHeader330,8672
+    public String getName() {getName342,8906
+    public void setName(String value) {setName354,9120
+    public BigInteger getProtect() {getProtect366,9353
+    public void setProtect(BigInteger value) {setProtect378,9584
+
+kr/co/hancom/hwpml/_2011/paragraph/Tr.java,196
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class Tr {Tr43,1311
+    protected List<Tc> tc;tc45,1330
+    public List<Tc> getTc() {getTc69,1965
+
+kr/co/hancom/hwpml/_2011/paragraph/Visibility.java,1802
+package kr.co.hancom.hwpml._2011.paragraph;kr.co.hancom.hwpml._2011.paragraph9,347
+public class Visibility {Visibility49,2235
+    protected String border;border54,2404
+    protected String fill;fill58,2573
+    protected BigInteger hideFirstEmptyLine;hideFirstEmptyLine60,2664
+    protected BigInteger hideFirstFooter;hideFirstFooter62,2770
+    protected BigInteger hideFirstHeader;hideFirstHeader64,2873
+    protected BigInteger hideFirstMasterPage;hideFirstMasterPage66,2980
+    protected BigInteger hideFirstPageNum;hideFirstPageNum68,3088
+    protected BigInteger showLineNumber;showLineNumber70,3191
+    public String getBorder() {getBorder80,3387
+    public void setBorder(String value) {setBorder92,3607
+    public String getFill() {getFill104,3837
+    public void setFill(String value) {setFill116,4051
+    public BigInteger getHideFirstEmptyLine() {getHideFirstEmptyLine128,4295
+    public void setHideFirstEmptyLine(BigInteger value) {setHideFirstEmptyLine140,4559
+    public BigInteger getHideFirstFooter() {getHideFirstFooter152,4832
+    public void setHideFirstFooter(BigInteger value) {setHideFirstFooter164,5087
+    public BigInteger getHideFirstHeader() {getHideFirstHeader176,5354
+    public void setHideFirstHeader(BigInteger value) {setHideFirstHeader188,5609
+    public BigInteger getHideFirstMasterPage() {getHideFirstMasterPage200,5880
+    public void setHideFirstMasterPage(BigInteger value) {setHideFirstMasterPage212,6147
+    public BigInteger getHideFirstPageNum() {getHideFirstPageNum224,6423
+    public void setHideFirstPageNum(BigInteger value) {setHideFirstPageNum236,6681
+    public BigInteger getShowLineNumber() {getShowLineNumber248,6949
+    public void setShowLineNumber(BigInteger value) {setShowLineNumber260,7201
+
+kr/co/hancom/hwpml/_2011/section/ObjectFactory.java,230
+package kr.co.hancom.hwpml._2011.section;kr.co.hancom.hwpml._2011.section9,347
+public class ObjectFactory {ObjectFactory29,1026
+    public ObjectFactory() {ObjectFactory36,1228
+    public Sec createSec() {createSec43,1330
+
+kr/co/hancom/hwpml/_2011/section/package-info.java,81
+package kr.co.hancom.hwpml._2011.section;kr.co.hancom.hwpml._2011.section9,509
+
+kr/co/hancom/hwpml/_2011/section/Sec.java,188
+package kr.co.hancom.hwpml._2011.section;kr.co.hancom.hwpml._2011.section9,347
+public class Sec {Sec45,1384
+    protected List<P> p;p48,1497
+    public List<P> getP() {getP72,2126
+
+org/idpf/_2007/opf/Item.java,533
+package org.idpf._2007.opf;org.idpf._2007.opf9,347
+public class Item {Item43,1601
+    protected String href;href47,1715
+    protected String id;id51,1880
+    protected String mediaType;mediaType54,2004
+    public String getHref() {getHref64,2189
+    public void setHref(String value) {setHref76,2403
+    public String getId() {getId88,2627
+    public void setId(String value) {setId100,2835
+    public String getMediaType() {getMediaType112,3062
+    public void setMediaType(String value) {setMediaType124,3291
+
+org/idpf/_2007/opf/Itemref.java,394
+package org.idpf._2007.opf;org.idpf._2007.opf9,347
+public class Itemref {Itemref42,1470
+    protected String idref;idref47,1635
+    protected String linear;linear51,1788
+    public String getIdref() {getIdref61,1971
+    public void setIdref(String value) {setIdref73,2188
+    public String getLinear() {getLinear85,2418
+    public void setLinear(String value) {setLinear97,2638
+
+org/idpf/_2007/opf/Manifest.java,188
+package org.idpf._2007.opf;org.idpf._2007.opf9,347
+public class Manifest {Manifest44,1321
+    protected List<Item> item;item47,1379
+    public List<Item> getItem() {getItem71,2026
+
+org/idpf/_2007/opf/Meta.java,388
+package org.idpf._2007.opf;org.idpf._2007.opf9,347
+public class Meta {Meta42,1482
+    protected String content;content47,1646
+    protected String name;name51,1816
+    public String getContent() {getContent61,1999
+    public void setContent(String value) {setContent73,2222
+    public String getName() {getName85,2454
+    public void setName(String value) {setName97,2668
+
+org/idpf/_2007/opf/Metadata.java,501
+package org.idpf._2007.opf;org.idpf._2007.opf9,347
+public class Metadata {Metadata51,1671
+    protected Title title;title54,1729
+    protected String language;language58,1879
+    protected List<Meta> meta;meta60,1943
+    public Title getTitle() {getTitle70,2127
+    public void setTitle(Title value) {setTitle82,2342
+    public String getLanguage() {getLanguage94,2573
+    public void setLanguage(String value) {setLanguage106,2799
+    public List<Meta> getMeta() {getMeta132,3496
+
+org/idpf/_2007/opf/ObjectFactory.java,819
+package org.idpf._2007.opf;org.idpf._2007.opf9,347
+public class ObjectFactory {ObjectFactory34,1244
+    private final static QName _Language_QNAME = new QName("http://www.idpf.org/2007/opf/", "language");_Language_QNAME36,1274
+    public ObjectFactory() {ObjectFactory42,1537
+    public Package createPackage() {createPackage49,1643
+    public Metadata createMetadata() {createMetadata57,1788
+    public Title createTitle() {createTitle65,1933
+    public Meta createMeta() {createMeta73,2068
+    public Manifest createManifest() {createManifest81,2204
+    public Item createItem() {createItem89,2348
+    public Spine createSpine() {createSpine97,2481
+    public Itemref createItemref() {createItemref105,2619
+    public JAXBElement<String> createLanguage(String value) {createLanguage119,3117
+
+org/idpf/_2007/opf/package-info.java,53
+package org.idpf._2007.opf;org.idpf._2007.opf9,496
+
+org/idpf/_2007/opf/Package.java,1095
+package org.idpf._2007.opf;org.idpf._2007.opf9,347
+public class Package {Package51,1871
+    protected Metadata metadata;metadata54,1928
+    protected Manifest manifest;manifest56,1994
+    protected Spine spine;spine58,2060
+    protected String id;id61,2178
+    protected String uniqueIdentifier;uniqueIdentifier64,2309
+    protected String version;version67,2444
+    public Metadata getMetadata() {getMetadata77,2633
+    public void setMetadata(Metadata value) {setMetadata89,2863
+    public Manifest getManifest() {getManifest101,3105
+    public void setManifest(Manifest value) {setManifest113,3335
+    public Spine getSpine() {getSpine125,3571
+    public void setSpine(Spine value) {setSpine137,3786
+    public String getId() {getId149,4011
+    public void setId(String value) {setId161,4219
+    public String getUniqueIdentifier() {getUniqueIdentifier173,4453
+    public void setUniqueIdentifier(String value) {setUniqueIdentifier185,4703
+    public String getVersion() {getVersion197,4956
+    public void setVersion(String value) {setVersion209,5179
+
+org/idpf/_2007/opf/Spine.java,200
+package org.idpf._2007.opf;org.idpf._2007.opf9,347
+public class Spine {Spine44,1324
+    protected List<Itemref> itemref;itemref47,1379
+    public List<Itemref> getItemref() {getItemref71,2044
+
+org/idpf/_2007/opf/Title.java,88
+package org.idpf._2007.opf;org.idpf._2007.opf9,347
+public class Title {Title36,1049
