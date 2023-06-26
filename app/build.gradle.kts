@@ -29,15 +29,61 @@ dependencies {
     // This dependency is used by the application.
     implementation("com.google.guava:guava:31.1-jre")
     
-    implementation("org.glassfish.jaxb:jaxb-runtime:2.3.5")
+    // implementation("org.glassfish.jaxb:jaxb-runtime:2.3.5")
+
+    implementation(kotlin("stdlib-jdk8"))
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.0")
 }
 
 application {
     // Define the main class for the application.
-    mainClass.set("hwpx.AppKt")
+    mainClass.set("AppKt")
+//    mainClassName = "AppKt"
 }
 
 tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+
+configure<SourceSetContainer> {
+    named("main") {
+        java.srcDir("src/main/kotlin")
+    }
+}
+
+tasks.withType<Jar> {
+    archiveFileName.set("App.jar")
+    manifest {
+//	  attributes 'Main-Class' : 'AppKt'
+	  attributes["Main-Class"] = "AppKt"
+	  
+    }
+
+    // To avoid the duplicate handling strategy error
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    // To add all of the dependencies
+    from(sourceSets.main.get().output)
+
+    dependsOn(configurations.runtimeClasspath)
+    from({
+        configurations.runtimeClasspath.get().filter { it.name.endsWith("jar") }.map { zipTree(it) }
+    })
+
+    doLast {
+        copy {
+            from("build/libs")
+            into("/home/dhxhghks/lib")
+            include("App.jar")
+        }
+    }
+}
+
+/*
+sourceSets {
+    main.java.srcDirs = []
+    main.kotlin.srcDirs = ['src/main/java', 'src/main/kotlin']
+    main.resources.srcDirs = ['src/main/resources']
+}
+*/
