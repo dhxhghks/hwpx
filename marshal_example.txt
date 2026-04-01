@@ -1,0 +1,71 @@
+marshal_example review
+
+Overview
+- This example shows how to use JAXB from Kotlin to read an OPF-style XML file into generated Java classes and then write it back to XML.
+- The entry point is `marshal_example/App.kt`.
+- The XML model classes are JAXB-generated Java files under `marshal_example/org/idpf/_2007/opf`.
+- The sample input file is `marshal_example/content.hpf`.
+
+Main flow
+1. `main(args)` reads the XML file path from `args[0]`.
+2. The file is loaded as UTF-8 text.
+3. `unmarshalPackage()` creates a `JAXBContext` for `org.idpf._2007.opf.Package` and converts the XML string into a `Package` object.
+4. The code currently does not modify the object.
+5. `marshalPackage()` creates another `JAXBContext`, marshals the `Package` object back to XML, and prints the result.
+
+Important classes
+- `Package.java`
+  Contains the root `<package>` element with:
+  `metadata`, `manifest`, `spine`, and attributes `id`, `unique-identifier`, `version`.
+- `Metadata.java`
+  Contains `title`, `language`, and a live `List<Meta>`.
+- `Manifest.java`
+  Contains a live `List<Item>`.
+- `Spine.java`
+  Contains a live `List<Itemref>`.
+- `Item.java`
+  Maps `href`, `id`, and `media-type` attributes.
+- `Itemref.java`
+  Maps `idref` and `linear` attributes.
+- `Meta.java`
+  Maps `name` and `content` attributes.
+- `package-info.java`
+  Declares the OPF namespace as the package namespace for JAXB.
+
+Sample XML structure
+- `content.hpf` contains an `opf:package` root element.
+- It includes:
+  `opf:metadata`
+  `opf:manifest`
+  `opf:spine`
+- The document uses many namespaces, but the mapped JAXB package is focused on the OPF namespace.
+
+How to run
+- Compile:
+  `kotlinc App.kt -include-runtime -d app.jar -cp .`
+- Run:
+  `java -cp app.jar:. AppKt content.hpf`
+
+What the example demonstrates well
+- Basic JAXB unmarshal and marshal flow.
+- Interoperability between Kotlin code and generated Java JAXB classes.
+- Correct use of a generated object model for a schema-derived XML format.
+
+Problems and limitations
+- `App.kt` has duplicate `StringWriter` imports.
+- `prettyPrintXml()` is incomplete and likely does not compile as written because required XML classes are not imported correctly, and the function is never used.
+- `Document`, `Element`, and the second `StringWriter` import are unused.
+- `main(args)` assumes `args[0]` exists; it will fail if no input path is provided.
+- A new `JAXBContext` is created on every marshal/unmarshal call. For repeated use, this should be reused because `JAXBContext` creation is relatively expensive.
+- The code only prints the original XML and the marshalled XML. It does not save output to a file.
+- The sample commented code suggests editing metadata, but no real mutation example is included.
+- In the sample XML, some values such as `version`, `unique-identifier`, and `id` are empty, so this is not a strong validation example.
+- Some generated field types appear restrictive. For example, `Meta.content` is mapped as `NCName`, which may be too narrow for arbitrary metadata values.
+
+Practical takeaway
+- Use this example when you want to load OPF XML into typed objects, inspect or modify the model, and serialize it back to XML.
+- If this is going to be reused in a real tool, the next improvements should be:
+  add argument validation,
+  remove dead code/imports,
+  reuse `JAXBContext`,
+  and write the marshalled result to an output file.

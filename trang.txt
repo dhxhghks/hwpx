@@ -1,0 +1,53 @@
+trang: generate XSD from XML examples
+
+Purpose
+- `trang` can read one or more XML documents and infer a schema.
+- For this use case, the input is `.xml` and the output is `.xsd`.
+- Important: `trang` does not "extract the original XSD" from XML. It infers an XSD from the example XML files you provide. The quality of the result depends on how complete and representative those XML samples are.
+
+Basic syntax
+- Jar form:
+  `java -jar trang.jar input.xml output.xsd`
+- If `trang` is installed as a command:
+  `trang input.xml output.xsd`
+
+Recommended commands
+- Single XML file to XSD:
+  `java -jar trang.jar sample.xml schema.xsd`
+- Multiple XML files to one XSD:
+  `java -jar trang.jar sample1.xml sample2.xml sample3.xml schema.xsd`
+- Explicitly force XML input and XSD output:
+  `java -jar trang.jar -I xml -O xsd sample.xml schema.xsd`
+
+How it works
+- `trang` detects formats from file extensions by default.
+- `.xml` means "XML documents used as examples from which to infer a schema".
+- `.xsd` means W3C XML Schema output.
+- When using XML examples, specify all input XML files first, then the output XSD file last.
+
+Practical workflow
+1. Collect several representative XML files.
+2. Run `trang` on all of them together.
+3. Review the generated `schema.xsd`.
+4. If parts are missing or too loose, add more XML examples and run it again.
+
+Example
+- Files:
+  `book1.xml`
+  `book2.xml`
+  `book3.xml`
+- Command:
+  `java -jar trang.jar book1.xml book2.xml book3.xml books.xsd`
+
+Useful option
+- Disable abstract elements/substitution groups in generated XSD:
+  `java -jar trang.jar -O xsd -o disable-abstract-elements sample.xml schema.xsd`
+
+Notes
+- You need Java to run `trang.jar`.
+- The generated XSD may need manual cleanup or tightening.
+- If an element or attribute does not appear in your sample XML files, the generated XSD may not include it.
+- If values vary across samples, `trang` may infer broader types/structures.
+
+Source
+- Trang manual: https://relaxng.org/jclark/trang-manual.html
