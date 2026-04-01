@@ -1,0 +1,3 @@
+kotlinc App.kt -include-runtime -d app.jar -cp .
+
+java -cp app.jar:. AppKt content.hpf

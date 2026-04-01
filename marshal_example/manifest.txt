@@ -1,0 +1,1 @@
+Class-Path: org/idpf/_2007/opf/*.class
