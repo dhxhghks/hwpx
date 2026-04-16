@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document formalizes how to build the `dvc/` project in this workspace.
+This document is the step-by-step manual for building the `dvc/` project in this workspace.
 
 Here, `dvc/` means Hancom's `HWPX Document Validation Checker`, a Windows-first C++ DLL project. It is not related to Data Version Control.
 
@@ -79,11 +79,30 @@ That means:
 
 The DVC README explicitly states that `jsoncpp` needs a generated Windows Visual Studio project and a built library before DVC can link successfully.
 
-## Recommended Build Procedure
+## Step-By-Step Manual
 
-Use the following sequence.
+Follow this sequence on Windows.
 
-### Step 1. Open a Windows shell in the `dvc/` directory
+### Step 1. Prepare the Windows toolchain
+
+Install these first:
+
+1. Windows 10 or a compatible Windows environment
+2. Visual Studio 2017 with Desktop development for C++
+3. MSVC toolset `v141`
+4. Windows SDK compatible with `10.0.17763.0`
+5. Git
+6. CMake
+
+Before going further, verify these commands work in a Developer Command Prompt:
+
+```bat
+where git
+where cmake
+where msbuild
+```
+
+### Step 2. Open a Windows shell in the `dvc/` directory
 
 Work from the DVC repository root:
 
@@ -97,7 +116,7 @@ Expected files here:
 - `DVCModel.vcxproj`
 - `README.md`
 
-### Step 2. Create the dependency directory layout
+### Step 3. Create the dependency directory layout
 
 Create `opensource/` if it does not exist:
 
@@ -114,7 +133,7 @@ dvc/
     jsoncpp/
 ```
 
-### Step 3. Populate `hwpx-owpml-model`
+### Step 4. Populate `hwpx-owpml-model`
 
 You have two practical options.
 
@@ -129,7 +148,7 @@ Option B: copy the already-present sibling repository from this workspace into `
 
 Current sibling source in this workspace:
 
-- `/home/kjhwan/work/hwpx/hwpx-owpml-model`
+- `/home/kjhwan/Work/hwpx/hwpx-owpml-model`
 
 On Windows, the equivalent would be to copy that repository into:
 
@@ -137,7 +156,7 @@ On Windows, the equivalent would be to copy that repository into:
 
 The important part is the final path, not how you got it there.
 
-### Step 4. Populate `jsoncpp`
+### Step 5. Populate `jsoncpp`
 
 Clone `jsoncpp` under `dvc/opensource/`:
 
@@ -153,7 +172,7 @@ cd /d <workspace>\dvc\opensource\jsoncpp
 git reset --hard 8190e061bc2d95da37479a638aa2c9e483e58ec6
 ```
 
-### Step 5. Generate a Visual Studio solution for `jsoncpp`
+### Step 6. Generate a Visual Studio solution for `jsoncpp`
 
 The DVC README provides the intended approach. From the `jsoncpp` directory:
 
@@ -166,9 +185,16 @@ This should create:
 
 - `dvc/opensource/jsoncpp/json_git/jsoncpp.sln`
 
-### Step 6. Build `jsoncpp`
+### Step 7. Build `jsoncpp`
 
 Open the generated `jsoncpp.sln` in Visual Studio 2017 and build the `jsoncpp_lib` project.
+
+You can also build it from the command line:
+
+```bat
+cd /d <workspace>\dvc\opensource\jsoncpp\json_git
+msbuild jsoncpp.sln /p:Configuration=Release /p:Platform=Win32
+```
 
 What you need to confirm afterward:
 
@@ -177,13 +203,20 @@ What you need to confirm afterward:
 
 The DVC README explicitly says to confirm the library outputs.
 
-### Step 7. Build `hwpx-owpml-model`
+### Step 8. Build `hwpx-owpml-model`
 
 Open the OWPML solution:
 
 - `dvc/opensource/hwpx-owpml-model/Owpml.sln`
 
 Build the configuration you intend DVC to use.
+
+Command-line example:
+
+```bat
+cd /d <workspace>\dvc\opensource\hwpx-owpml-model
+msbuild Owpml.sln /p:Configuration=Debug /p:Platform=Win32
+```
 
 What DVC expects from OWPML:
 
@@ -197,7 +230,7 @@ The checked-in DVC project references these output directories:
 
 So after building OWPML, verify that those directories actually contain the required `.lib` files.
 
-### Step 8. Verify DVC dependency paths before building
+### Step 9. Verify DVC dependency paths before building
 
 Before opening DVC in Visual Studio, verify these assumptions:
 
@@ -216,7 +249,7 @@ That means the project file is not fully consistent across configurations.
 
 For the least surprise, use the configuration that best matches the explicit README workflow and then confirm or adjust project properties in Visual Studio if paths do not resolve.
 
-### Step 9. Open and build `DVCModel.sln`
+### Step 10. Open and build `DVCModel.sln`
 
 Open:
 
@@ -229,6 +262,13 @@ Recommended initial target:
 
 Then build the solution.
 
+Command-line example:
+
+```bat
+cd /d <workspace>\dvc
+msbuild DVCModel.sln /p:Configuration=Debug /p:Platform=Win32
+```
+
 Expected outputs:
 
 - `DVCModel.dll`
@@ -236,7 +276,16 @@ Expected outputs:
 
 The README states these are the primary artifacts.
 
-### Step 10. If linking fails, inspect project settings immediately
+### Step 11. Confirm outputs
+
+After a successful build, confirm these files exist:
+
+- `dvc\Debug\DVCModel.dll` or `dvc\Release\DVCModel.dll`
+- `dvc\Debug\DVCModel.lib` or `dvc\Release\DVCModel.lib`
+
+If they do not exist, stop and inspect the Visual Studio build output before moving on.
+
+### Step 12. If linking fails, inspect project settings immediately
 
 The most likely failure points are:
 
@@ -285,6 +334,13 @@ The example project links against:
 
 So build the example with the same configuration as the DVC DLL you already built.
 
+Command-line example:
+
+```bat
+cd /d <workspace>\dvc\Examples\windows\ExampleWindows
+msbuild ExampleWindows.vcxproj /p:Configuration=Debug /p:Platform=Win32
+```
+
 ## Basic Runtime Test
 
 The README shows the intended usage pattern:
@@ -314,6 +370,19 @@ Meaning:
 4. `-t`: table-focused output option
 5. first path: checklist spec JSON
 6. second path: target HWPX document
+
+## Minimal Manual Checklist
+
+If you only need the shortest safe sequence, do this:
+
+1. Create `dvc\opensource`.
+2. Put `hwpx-owpml-model` into `dvc\opensource\hwpx-owpml-model`.
+3. Clone `jsoncpp` into `dvc\opensource\jsoncpp`.
+4. Generate `jsoncpp.sln` with CMake for `Visual Studio 15 2017 Win64` or the platform you actually plan to use.
+5. Build `jsoncpp`.
+6. Build `hwpx-owpml-model`.
+7. Build `DVCModel.sln`.
+8. Verify `DVCModel.dll` and `DVCModel.lib`.
 
 ## Troubleshooting Checklist
 
